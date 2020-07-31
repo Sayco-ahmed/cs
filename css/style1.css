@@ -10549,3 +10549,18 @@ hr {
   color: #9e8751;
  
 }
+
+/* ------------------------- */
+
+/* request demo edit */
+
+#btn-request button {
+color: #9E8751 !important;
+background-color: #ffffff !important;
+border-color: #9e8751 !important;
+}
+#btn-request button:hover{
+color: #fff !important;
+background-color: #9E8751 !important;
+border-color: #9e8751 !important;
+}
