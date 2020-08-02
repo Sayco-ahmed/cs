@@ -8344,6 +8344,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-toggler:focus {
       outline: none !important; }
   .ftco-navbar-light.scrolled {
+    height: 80px;
     position: fixed;
     right: 0;
     left: 0;
@@ -8390,6 +8391,7 @@ h1, h2, h3, h4, h5,
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #00bdaa !important; }
     .ftco-navbar-light.scrolled.awake {
+      opacity: 0.8;
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
       -o-transition: .3s all ease-out;
