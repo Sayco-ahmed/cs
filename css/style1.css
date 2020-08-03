@@ -8382,7 +8382,8 @@ h1, h2, h3, h4, h5,
       padding-right: 0;
       text-transform: uppercase;
       font-size: 16px;
-      letter-spacing: .1em; }
+      letter-spacing: .1em;
+    padding: 5px; }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
