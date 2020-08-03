@@ -10695,3 +10695,37 @@ color: #f38695;
 display: block;
 margin-top: 5px;
  } 
+ /* /our team */
+ /* our client */
+ .m-client{margin-bottom: 50px;}
+ #client-logos .item {
+  margin: 1px;
+}
+.cover-wrapperr {
+  padding: 75px;
+}
+.client-inners img {
+  height: 100%;
+  object-fit: contain;
+}
+.client-inners {
+  border: 1px solid #ccc;
+  height: 85px;
+  text-align: center;
+  padding: 8px;
+}
+.owl-nav img {
+  width: 34px;
+}
+.owl-prev img {
+  position: absolute;
+  left: -38px;
+  top: 50%;
+  margin-top: -20px;
+}
+.owl-next img {
+  position: absolute;
+  right: -38px;
+  top: 50%;
+  margin-top: -20px;
+}
