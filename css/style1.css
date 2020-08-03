@@ -9445,7 +9445,7 @@ textarea.form-control {
     opacity: 1; }
     .testimony-wrap .quote i {
       font-size: 40px;
-      color: #00bdaa; }
+      color: #9e8751; }
   .testimony-wrap .name {
     font-weight: 400;
     font-size: 18px;
@@ -9453,7 +9453,7 @@ textarea.form-control {
     color: #000000; }
   .testimony-wrap .position {
     font-size: 14px;
-    color: #00bdaa; }
+    color: #9e8751; }
 
 @media (max-width: 767.98px) {
   .about-image {
@@ -9468,7 +9468,6 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -10244,6 +10243,13 @@ textarea.form-control {
 /* end khalil stlye */
 
 /* تعديلات الالوان والفونت  */
+.su-story{
+  background-color: black;
+}
+
+.f-gold{
+  color: #9e8751;
+}
 
 #ftco-navbar li a{
   color: black;
