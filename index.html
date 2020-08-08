@@ -25,7 +25,25 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 
 	<link rel="stylesheet" href="css/style1.css">
+<style>
 
+.success-title::after{
+	content: "";
+	position: absolute;
+	width: 190px;
+	margin:  auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background-color: #00bdaa;
+
+	transition: background-color .3s;
+} 
+
+
+
+</style>
 
 </head>
 
@@ -619,7 +637,170 @@
 	</div>
 	<!-- /our client -->
 
+	<section class="ftco-section testimony-section">
+		<div class="container-fluid px-md-5">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-8 text-center heading-section ftco-animate">
+				
+					<h2 class="mb-5 success-title">Our Success Stories </h2>
+					
+				</div>
+			</div>
+			<div class="row ftco-animate justify-content-center mt-3">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img" style="background-image: url(images/person_1.jpg)">
+								</div>
+								<div class="text pl-4">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and
+										Consonantia, there live the blind texts.</p>
+									<p class="name">Racky Henderson</p>
+									<span class="position">Father</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img" style="background-image: url(images/person_2.jpg)">
+								</div>
+								<div class="text pl-4">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and
+										Consonantia, there live the blind texts.</p>
+									<p class="name">Henry Dee</p>
+									<span class="position">Businesswoman</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img" style="background-image: url(images/person_3.jpg)">
+								</div>
+								<div class="text pl-4">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and
+										Consonantia, there live the blind texts.</p>
+									<p class="name">Mark Huff</p>
+									<span class="position">Businesswoman</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img" style="background-image: url(images/person_4.jpg)">
+								</div>
+								<div class="text pl-4">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and
+										Consonantia, there live the blind texts.</p>
+									<p class="name">Rodel Golez</p>
+									<span class="position">Businesswoman</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img" style="background-image: url(images/person_1.jpg)">
+								</div>
+								<div class="text pl-4">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and
+										Consonantia, there live the blind texts.</p>
+									<p class="name">Ken Bosh</p>
+									<span class="position">Businesswoman</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<div id="wrap">
+		<div id="showcase">
+			  <img src="Alison.png" alt="Alison" class="cloud9-item">
+			  <img src="Adam.png" alt="Adam" class="cloud9-item">
+			  <img src="Amy.png" alt="Amy" class="cloud9-item">
+			  <img src="Blake.png" alt="Blake" class="cloud9-item">
+			  <img src="Angela.png" alt="Angela" class="cloud9-item">
+			  <img src="Claire.png" alt="Claire" class="cloud9-item">
+		</div>
+
+		<p id="item-title">&nbsp;</p>
+
+		<div class="nav noselect">
+			  <button class="left"><i class="fa fa-arrow-left"></i></button>
+			  <button class="right"><i class="fa fa-arrow-right"></i></button>
+		</div>
+
+  </div>
+
+  <script type="text/javascript">
+
+  $(function() {
+		var showcase = $("#showcase")
+
+		showcase.Cloud9Carousel( {
+			  yPos: 42,
+			  yRadius: 48,
+			  mirrorOptions: {
+					gap: 12,
+					height: 0.2
+			  },
+			  buttonLeft: $(".nav > .left"),
+			  buttonRight: $(".nav > .right"),
+			  autoPlay: true,
+			  bringToFront: true,
+
+			  onRendered: showcaseUpdated,
+			  onLoaded: function() {
+					showcase.css( 'visibility', 'visible' )
+					showcase.css( 'display', 'none')
+					showcase.fadeIn( 1500 )
+			  }
+		})
+
+		function showcaseUpdated( showcase ) {
+			  var title = $("#item-title").html(
+					$(showcase.nearestItem()).attr( 'alt' )
+			  )
+
+			  var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+			  title.css('opacity', 0.5 + (0.5 * c))
+		}
+
+		$('.nav > button').click( function( e ) {
+			  var b = $(e.target).addClass( 'down' )
+			  setTimeout( function() { b.removeClass( 'down' ) }, 80)
+		} )
+
+		$(document).keydown( function( e ) {
+			  switch( e.keyCode ) {
+					case 37:
+					$('.nav > .left').click()
+					break
+
+					case 39:
+					$('.nav > .right').click()
+			  }
+		})
+  })
+
+  </script>
 
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="container-fluid">
