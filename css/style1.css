@@ -10080,6 +10080,7 @@ textarea.form-control {
     .v-show{
       z-index: 13;
       position: relative;
+    
       
     }
 
@@ -10145,6 +10146,7 @@ textarea.form-control {
 
 
     /* khalil add-style */
+    
     .addres{font-size: 22px;
       font-family: Roboto, sans-serif;
       font-weight: 500;
@@ -10244,7 +10246,7 @@ textarea.form-control {
 
 /* تعديلات الالوان والفونت  */
 .su-story{
-  background-color: black;
+  background-color: white;
 }
 
 .f-gold{
@@ -10302,6 +10304,12 @@ textarea.form-control {
     text-align: center;
   }
 
+}
+.ftco-section1 {
+  padding: 0px;
+  margin-top: 20px;
+
+  margin-bottom: 0px !important;
 }
 
 
@@ -10607,7 +10615,7 @@ teamm{
   font-family: sans-serif;
 }
 .box{
-  width: 1200px;
+  width: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
@@ -10616,8 +10624,8 @@ teamm{
 }
 .card{
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   background: #fff;
   margin: 10px auto;
   border-radius: 4px;
