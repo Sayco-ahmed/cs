@@ -10623,6 +10623,7 @@ teamm{
   margin-top: 50px;
 }
 .card{
+  position: relative;
   width: 200px;
   height: 250px;
   background: #fff;
