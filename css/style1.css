@@ -10056,7 +10056,6 @@ textarea.form-control {
     .addres{font-size: 22px;
       font-family: Roboto, sans-serif;
       font-weight: 500;
-      margin-bottom: 22px;
       text-transform: uppercase;
       color: #eb566c;
       display: inline-block;}
@@ -10066,7 +10065,6 @@ textarea.form-control {
         font-size: 40px;
         font-weight: 700;
         line-height: 1.2;
-      margin-bottom: 20px;
      opacity: 50%;}
       .addres3{opacity: 60%;
        }
