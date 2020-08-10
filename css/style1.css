@@ -10233,6 +10233,7 @@ textarea.form-control {
 
 .tec-sec h2{
   color:#9e8751 ;
+  font-weight: bolder;
 }
 .tec-sec {
   color: black;
@@ -10272,7 +10273,7 @@ textarea.form-control {
   color: #9e8751;
 }
 .btn.btn-secondary:hover{
-  background: #9e8751;
+  background-image: linear-gradient(to right, #827350, #887853, #8f7e56, #95835a, #9c895d);
   border: 1px solid #9e8751;
   color: #fff;
 }
