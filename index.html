@@ -24,9 +24,178 @@
 	<link rel="stylesheet" href="css/flaticon 1.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style1.css">
-
+	<style>	.services-section{
+		background: url(bg.jpg);
+		background-size: cover;
+		padding: 60px 0;
+	  
+	  }
+	  .inner-width{
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		padding: 0 20px;
+		overflow: hidden;
+	  }
+	  .section-title{
+		text-align: center;
+		color: #9e8751;
+		text-transform: uppercase;
+		font-size: 30px;
+	  }
+	  .border{
+		width: 160px;
+		height: 2px;
+		background: #9e8751;
+		margin: 40px auto;
+	  }
+	  .services-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	  }
+	  
+	  .service-box{
+		max-width: 33.33%;
+		padding: 10px;
+		text-align: center;
+		color: #9e8751;
+		cursor: pointer;
+	  }
+	  
+	  .service-icon{
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		border: 3px solid #9e8751;
+		background: #01181d;
+		color: #ddd;
+		transform: rotate(45deg);
+		margin-bottom: 30px;
+		margin-top: 16px;
+		transition: 0.3s linear;
+	  }
+	  .service-icon i{
+		line-height: 70px;
+		transform: rotate(-45deg);
+		font-size: 26px;
+	  }
+	  .service-box:hover .service-icon{
+		background: #d9e3e6;
+		color: rgb(26, 1, 1);
+	  }
+	  .service-title{
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	  }
+	  .service-desc{
+		font-size: 14px;
+	  }
+	  
+	  @media screen and (max-width:960px) {
+		.service-box{
+		  max-width: 45%;
+		}
+	  }
+	  
+	  @media screen and (max-width:768px) {
+		.service-box{
+		  max-width: 50%;
+		}
+	  }
+	  
+	  @media screen and (max-width:480px) {
+		.service-box{
+		  max-width: 100%;
+		}
+	  }
+	  
+	  
+	  
+	  .our-team{
+		  background: #fff;
+		  width: 100%;
+		  /* top: 50%;
+		  left: 50%;
+		  position: absolute;
+		  transform: translate(-50%, -50%); */
+		  padding:100px 0px;
+	  }
+	  
+	  .page-title{
+		  font-size: 30px;
+		  font-weight: 400;
+	  }
+	  
+	  .page-title span{
+		  font-weight: 800;
+		  color: #9e8751;
+	  }
+	  
+	  .subtitle{
+		  font-size: 20px;
+		  font-weight: 300;
+		  color: #959595;
+	  }
+	  
+	  .desc{
+		  font-size: 14px;
+		  color: #959595;
+	  }
+	  .btn.btn-learn{
+		  background: #9e8751;
+		  color: #fff;
+		  border-radius: 0;
+		  padding: 10px 50px 10px 50px;
+		  transition: 0.9s;
+	  }
+	  .btn.btn-learn:hover{
+		  background: transparent;
+		  border: 1px solid #9e8751;
+		  color: #9e8751;
+	  }
+	  
+	  .team-name{
+		  font-size: 18px;
+		  font-weight: bold;
+		  padding: 10px 0 0 0;
+		  margin: 0;
+		  text-align: center;
+	  }
+	  
+	  .team-desc{
+		  font-size: 14px;
+		  color: #9e8751;
+		  text-align: center;
+	  }
+	  
+	  .carousel-item img{
+		  width: 200px;
+		  height: 200px;
+		  object-fit: cover;
+	  }
+	  
+	  
+	  .success-title::after{
+		  content: "";
+		  position: absolute;
+	  @ -36,7 +191,7 @@
+		  left: 0;
+		  right: 0;
+		  height: 5px;
+		  background-color: #00bdaa;
+		  background-color: #9e8751;
+	  
+		  transition: background-color .3s;
+	  } </style>
 
 </head>
+
+
+
+
+
 
 <body>
 
@@ -144,7 +313,7 @@
 <!-- ------------------------------------------------------------------------->
 	<!-- بداية الجزء الخاص بالبشمهندس سمية -->
 
-	<section class="ftco-intro ">
+	<!-- <section class="ftco-intro ">
 		<div class="container-fluid ">
 			<!-- <div class="row  intro-head">
 				<div class="intro w-100 text-center ">
@@ -202,9 +371,81 @@
 				</div>
 			</div>
 		</div>
-	</section> 
+	</section>  -->
 
 	<!-- نهاية الجزء الخاص بالبشمهندس سمية -->
+</section> -->
+
+
+
+<div class="services-section">
+	<div class="inner-width">
+	  <h1 class="section-title">Our Services</h1>
+	  <div class="border"></div>
+	  <div class="services-container">
+
+		<div class="service-box ">
+		  <div class="service-icon">
+			<i class="fas fa-paint-brush"></i>
+		  </div>
+		  <div class="service-title">Web Designs</div>
+		  <div class="service-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+		  </div>
+		</div>
+
+		<div class="service-box">
+		  <div class="service-icon">
+			<i class="fas fa-code"></i>
+		  </div>
+		  <div class="service-title">Web Development</div>
+		  <div class="service-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+		  </div>
+		</div>
+
+		<div class="service-box">
+		  <div class="service-icon">
+			<i class="fas fa-brush"></i>
+		  </div>
+		  <div class="service-title">Responsive Designs</div>
+		  <div class="service-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+		  </div>
+		</div>
+
+		<div class="service-box">
+		  <div class="service-icon">
+			<i class="fas fa-object-ungroup"></i>
+		  </div>
+		  <div class="service-title">Edit Sections</div>
+		  <div class="service-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+		  </div>
+		</div>
+
+		<div class="service-box">
+		  <div class="service-icon">
+			<i class="fas fa-database"></i>
+		  </div>
+		  <div class="service-title">Databases</div>
+		  <div class="service-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+		  </div>
+		</div>
+
+		<div class="service-box">
+		  <div class="service-icon">
+			<i class="fab fa-android"></i>
+		  </div>
+		  <div class="service-title">Android</div>
+		  <div class="service-desc">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
 	<!-- end service section   -->
 <!-- ------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------ -->
@@ -534,7 +775,7 @@
 <!-- ------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------ -->
 	<!-- old of our team  -->
-		<div class="teamm">
+		<!-- <div class="teamm">
 
 		<div class="col-md-12 text-center heading-section ftco-animate"><br>
 			<h1 class="mb-4 f-gold">our team</h1>
@@ -592,11 +833,71 @@
           </div>
        </div>
 	</div>
-</div>
+</div> -->
 
 
 
 <!-- /our team -->
+<section class="our-team">
+	<div class="container">
+		<div class="row">
+			<!-- Left content -->
+			<div class="col-md-5">
+				<!-- Slider -->
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+
+					  <!-- Slide 1 -->
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/1.jpg" class="d-block w-100" alt="...">
+								<h3 class="team-name">ROBERT ESTEIN</h3>
+								<p class="team-desc">CEO</p>
+							</div>
+							<div class="col-md-6">
+								<img src="images/2.jpg" class="d-block w-100" alt="...">
+								<h3 class="team-name">JOHN WILLIAM</h3>
+								<p class="team-desc">CO CEO</p>
+							</div>
+						</div>
+					</div>
+					<!-- ./Slide 1 -->
+
+					<!-- Slide 2 -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/3.jpg" class="d-block w-100" alt="...">
+								<h3 class="team-name">BILLY STEVEN</h3>
+								<p class="team-desc">DEVELOPER</p>
+							</div>
+							<div class="col-md-6">
+								<img src="images/4.jpg" class="d-block w-100" alt="...">
+								<h3 class="team-name">ROY LARENT</h3>
+								<p class="team-desc">DESIGNER</p>
+							</div>
+						</div>
+					</div>
+					<!-- ./Slide 2 -->
+
+				  </div>
+				</div>
+				<!-- ./Slider -->
+			</div>
+
+			<!-- Right Content -->
+			<div class="col-md-7">
+				<h1 class="page-title">Meet <span>Our Team</span></h1>
+				<h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+				<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius neque at est laoreet convallis. Fusce eu lacus sit amet felis egestas elementum. Aenean varius, sapien fermentum congue elementum, dolor nunc efficitur massa, quis mattis mi tortor quis metus.</p>
+
+				<button class="btn btn-learn">Learn More</button>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- ------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------ -->
 <!-- start our cilent-->
