@@ -198,10 +198,159 @@
 } 
 
 
-
-</style>
-
-	<style>	.services-section{
+.services-section{
+		background: url(bg.jpg);
+		background-size: cover;
+		padding: 60px 0;
+	  
+	  }
+	  .inner-width{
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		padding: 0 20px;
+		overflow: hidden;
+	  }
+	  .section-title{
+		text-align: center;
+		color: #9e8751;
+		text-transform: uppercase;
+		font-size: 30px;
+	  }
+	  .border{
+		width: 160px;
+		height: 2px;
+		background: #9e8751;
+		margin: 40px auto;
+	  }
+	  .services-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	  }
+	  
+	  .service-box{
+		max-width: 33.33%;
+		padding: 10px;
+		text-align: center;
+		color: #9e8751;
+		cursor: pointer;
+	  }
+	  
+	  .service-icon{
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		border: 3px solid #9e8751;
+		background: #01181d;
+		color: #ddd;
+		transform: rotate(45deg);
+		margin-bottom: 30px;
+		margin-top: 16px;
+		transition: 0.3s linear;
+	  }
+	  .service-icon i{
+		line-height: 70px;
+		transform: rotate(-45deg);
+		font-size: 26px;
+	  }
+	  .service-box:hover .service-icon{
+		background: #d9e3e6;
+		color: rgb(26, 1, 1);
+	  }
+	  .service-title{
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	  }
+	  .service-desc{
+		font-size: 14px;
+	  }
+	  
+	  @media screen and (max-width:960px) {
+		.service-box{
+		  max-width: 45%;
+		}
+	  }
+	  
+	  @media screen and (max-width:768px) {
+		.service-box{
+		  max-width: 50%;
+		}
+	  }
+	  
+	  @media screen and (max-width:480px) {
+		.service-box{
+		  max-width: 100%;
+		}
+	  }
+	  
+	  
+	  
+	  .our-team{
+		  background: #fff;
+		  width: 100%;
+		  /* top: 50%;
+		  left: 50%;
+		  position: absolute;
+		  transform: translate(-50%, -50%); */
+		  padding:100px 0px;
+	  }
+	  
+	  .page-title{
+		  font-size: 30px;
+		  font-weight: 400;
+	  }
+	  
+	  .page-title span{
+		  font-weight: 800;
+		  color: #9e8751;
+	  }
+	  
+	  .subtitle{
+		  font-size: 20px;
+		  font-weight: 300;
+		  color: #959595;
+	  }
+	  
+	  .desc{
+		  font-size: 14px;
+		  color: #959595;
+	  }
+	  .btn.btn-learn{
+		  background: #9e8751;
+		  color: #fff;
+		  border-radius: 0;
+		  padding: 10px 50px 10px 50px;
+		  transition: 0.9s;
+	  }
+	  .btn.btn-learn:hover{
+		  background: transparent;
+		  border: 1px solid #9e8751;
+		  color: #9e8751;
+	  }
+	  
+	  .team-name{
+		  font-size: 18px;
+		  font-weight: bold;
+		  padding: 10px 0 0 0;
+		  margin: 0;
+		  text-align: center;
+	  }
+	  
+	  .team-desc{
+		  font-size: 14px;
+		  color: #9e8751;
+		  text-align: center;
+	  }
+	  
+	  .carousel-item img{
+		  width: 200px;
+		  height: 200px;
+		  object-fit: cover;
+	  }
+	  
+	 .services-section{
 		background: url(bg.jpg);
 		background-size: cover;
 		padding: 60px 0;
@@ -354,8 +503,11 @@
 	  }
 	  
 	 
+</style>
+
+	
 	  
-	  </style>
+	
 
 
 </head>
@@ -511,13 +663,13 @@
 	<!-- بداية الجزء الخاص بالبشمهندس سمية -->
 
 	<!-- <section class="ftco-intro ">
-=======
-	<!-- start service section   -->
+
+ start service section   -->
 	<section class="ftco-intro ">
 
-<!-- 
+ 
 	<section class="ftco-intro ">
->>>>>>> 491879e139d325e1ebc696a8f1936ed0755098f1
+
 		<div class="container-fluid ">
 			<div class="row  intro-head">
 				<div class="intro w-100 text-center ">
@@ -576,7 +728,7 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section> 
 
 
 
@@ -1142,7 +1294,7 @@
 
 	
 
-<section class="ftco-section ftco-no-pt our-team">
+<!-- <section class="ftco-section ftco-no-pt our-team">
 	<div class="container">
 		<div class="row justify-content-center mb-5 pb-3">
 			<div class="col-md-7 text-center heading-section ftco-animate">
@@ -1278,7 +1430,7 @@
 		</div>
 	</div>
 </section>
-
+ -->
 
 <!-- Jquery -->
 <!-- <script src="js/jquery-3.4.0.js"></script> -->
@@ -1364,7 +1516,7 @@
 <!-- ------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------ -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
   $(function() {
 		var showcase = $("#showcase")
@@ -1415,9 +1567,9 @@
 		})
   })
 
-  </script>
+  </script> -->
 <!-- start footer -->
->>>>>>> 4bbfbaaaa5c97dfc46de55405d22fab8a42cbbac
+
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
 		<div class="container-fluid">
 			<div class="row">
