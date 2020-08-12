@@ -144,14 +144,14 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.164);
   
 }
 
 .wrap-contact3 {
   width: 500px;
-  background: #9e8751;
-  background-image: linear-gradient(to top, #000000, #302020, #5a3c33, #805f42, #9e8751);
+  background: rgba(0, 0, 0, 0.549);
+  background-image: linear-gradient(to top, #ff1d1d2c, #6b0a0a71, #49050565,#14010165 );
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 65px 55px;
@@ -274,9 +274,8 @@ textarea.input3 {
   border-radius: 2px;
   position: relative;
   z-index: 1;
-  background: #fafafa;
- background-image: linear-gradient(to top, #000000, #1f1f1f, #696564, #afaba8, #ffffff);
- 
+  background: #0000008c;
+  background-image: linear-gradient(to top, #ff1d1d2c, #6b0a0a71, #49050565,#14010165 );
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -556,14 +555,14 @@ textarea.input3 {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background: #9e8751;
-  background-image: linear-gradient(to top, #000000, #1f1f1f, #696564, #afaba8, #ffffff);
+  background: #0000008c;
+  background-image: linear-gradient(to top, #ff1d1d2c, #6b0a0a71, #49050565,#14010165 );
   color: white;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #9e8751;
-  background-image: linear-gradient(to top, #000000, #1f1f1f, #696564, #afaba8, #ffffff);
+  background: #0000008c;
+  background-image: linear-gradient(to top, #ff1d1d2c, #6b0a0a71, #49050565,#14010165 );
   color: white;
 }
 
