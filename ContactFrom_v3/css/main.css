@@ -29,7 +29,7 @@
 * {
 	margin: 0px; 
 	padding: 0px; 
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body, html {
@@ -94,15 +94,15 @@ textarea:focus, input:focus {
 }
 
 
-input::-webkit-input-placeholder { color: rgba(255,255,255,0.8);}
-input:-moz-placeholder { color: rgba(255,255,255,0.8);}
-input::-moz-placeholder { color: rgba(255,255,255,0.8);}
-input:-ms-input-placeholder { color: rgba(255,255,255,0.8);}
+input::-webkit-input-placeholder { color: #9e8751;}
+input:-moz-placeholder { color: #9e8751;}
+input::-moz-placeholder { color: #9e8751;}
+input:-ms-input-placeholder { color: #9e8751;}
 
-textarea::-webkit-input-placeholder { color: rgba(255,255,255,0.8);}
-textarea:-moz-placeholder { color: rgba(255,255,255,0.8);}
-textarea::-moz-placeholder { color: rgba(255,255,255,0.8);}
-textarea:-ms-input-placeholder { color: rgba(255,255,255,0.8);}
+textarea::-webkit-input-placeholder { color: #9e8751;}
+textarea:-moz-placeholder { color: #9e8751;}
+textarea::-moz-placeholder { color: #9e8751;}
+textarea:-ms-input-placeholder { color: #9e8751;}
 
 /*---------------------------------------------*/
 button {
@@ -170,7 +170,7 @@ iframe {
   display: block;
   font-family: Poppins-Bold;
   font-size: 80px;
-	color: rgb(153, 153, 153);
+	color: #9e8751b9;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -258,7 +258,7 @@ textarea.input3 {
 .contact3-form-btn {
   font-family: Poppins-Medium;
   font-size: 16px;
-  color: #555555;
+  color: # ;
   line-height: 1.2;
   text-transform: uppercase;
 
@@ -411,7 +411,7 @@ textarea.input3 {
   cursor: pointer;
   font-family: Poppins-Medium;
   font-size: 18px;
-  color: #fff;
+  color: #9e8751 ;
   line-height: 1.2;
 }
 
