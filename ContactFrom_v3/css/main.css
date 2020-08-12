@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/FromWhereYouAre.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/FromWhereYouAre.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/STEREOFI.TTF'); 
 }
 
 
@@ -168,8 +168,8 @@ iframe {
 .contact3-form-title {
   display: block;
   font-family: Poppins-Bold;
-  font-size: 39px;
-  color: #fff;
+  font-size: 80px;
+	color: rgb(153, 153, 153);
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -193,7 +193,7 @@ iframe {
   width: 100%;
   background: transparent;
   font-family: Poppins-Regular;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   line-height: 1.2;
   padding: 0 5px;
@@ -274,9 +274,9 @@ textarea.input3 {
   border-radius: 2px;
   position: relative;
   z-index: 1;
-  background: #9e8751;
-  background-image: linear-gradient(to top, #000000, #302020, #5a3c33, #805f42, #9e8751);
-
+  background: #fafafa;
+ background-image: linear-gradient(to top, #000000, #1f1f1f, #696564, #afaba8, #ffffff);
+ 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -461,6 +461,7 @@ textarea.input3 {
 }
 
 
+
 /*==================================================================
 [ Input3 select ]*/
 
@@ -556,13 +557,13 @@ textarea.input3 {
 
 .select2-container .select2-results__option[aria-selected="true"] {
   background: #9e8751;
-  background-image: linear-gradient(to top, #000000, #302020, #5a3c33, #805f42, #9e8751);
+  background-image: linear-gradient(to top, #000000, #1f1f1f, #696564, #afaba8, #ffffff);
   color: white;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background: #9e8751;
-  background-image: linear-gradient(to top, #000000, #302020, #5a3c33, #805f42, #9e8751);
+  background-image: linear-gradient(to top, #000000, #1f1f1f, #696564, #afaba8, #ffffff);
   color: white;
 }
 
