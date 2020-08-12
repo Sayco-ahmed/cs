@@ -8263,7 +8263,6 @@ h1, h2, h3, h4, h5,
       color: #1D2227; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
-        
         color: #1D2227; } }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
@@ -9442,7 +9441,7 @@ textarea.form-control {
       position: relative; }
        @media (min-width: 768px) {
         .ftco-intro .intro {
-          margin-top: -20px; } } 
+          margin-top: -70px; } } 
 
           .intro-head .intro{
             background-image: linear-gradient(to right, #1d2227, #1a1e22, #16191d, #131518, #0e1013);
@@ -9987,30 +9986,28 @@ textarea.form-control {
     .v-show{
       z-index: 13;
       position: relative;
+    
+      
     }
 
     .b-show{
       position: absolute;
-      bottom: 70px ;
-      right: 5% ;
+      bottom: 50px;
       border-radius: 30px;
+      right: 5%;
       z-index: 15;
+      background-color: rgb(0, 0, 0);
       padding: 25px;
       padding-bottom: 70px;
 
     }
-    .b-show2{
-      position: absolute;
-      bottom: 450px !important;
-      right: 55% !important;
-    }
     .b-show h1{
-      font-size: 30px;
-      color:#333333;
+      font-size: 20px;
+      color:#9e8751;
     }
     .b-show p{
-      font-size: 40px;
-      color: rgba(253, 253, 253, 0.932);
+      font-size: 35px;
+      color: #fff;
       font-weight: bold;
     }
 
@@ -10958,4 +10955,3 @@ margin-top: 5px;
         max-width: 97%;
       }
     /* end of our team secton */
-    
