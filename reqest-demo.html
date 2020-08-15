@@ -3,8 +3,6 @@
 
 <head>
 	
-
-	
 	<title>senior for consulting</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,10 +23,31 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/flaticon 1.css">
 	<link rel="stylesheet" href="css/icomoon.css">
-
 	<link rel="stylesheet" href="css/style1.css">
-	<!-- STYLE CSS -->
-	<!-- <link rel="stylesheet" href="css/reqs-style.css"> -->
+
+
+	<!--===============================================================================================-->
+		<link rel="icon" type="image/png" href="images/request-demo/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor-request-demo/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="fonts/request-demo/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="fonts/request-demo/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor-request-demo/animate/animate.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor-request-demo/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor-request-demo/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor-request-demo/select2/select2.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="vendor-request-demo/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="css/request-demo/util.css">
+		<link rel="stylesheet" type="text/css" href="css/request-demo/main.css">
+	<!--===============================================================================================-->
 </head>
 
 <body>
@@ -103,49 +122,117 @@
 	<!--===============================end of navbar section=============================================-->
 	<!--===============================================================================================-->
 
-	<div class="container mt-5 mb-5 main-form col-12 col-sm-8 col-lg-6">
-		<div class="row">
-			<div class="col-12 justify-content-center d-flex">
-				<div class="image-holder ">
-					<img src="images/logo/s-logo-black.png" alt="" class="img-main">
-				</div>
-			</div>
 
-
-
-			<div class=" col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
-				<div class="text-center">
-
-					<form action="" method="POST" enctype="multipart/form-data">
-						<h3>Make Your Request </h3>
-						<div class="form-row col-12">
-							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Company Name"
-								name="CompanyName" id="CompanyName">
-							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Name" name="Name"
-								id="Name">
-							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Mail" name="Mail"
-								id="Mail">
-						</div>
-						<div class="form-row col-12">
-							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Phone">
-
-						</div>
-						<textarea name="Notes" id="Notes" placeholder="Message" class="form-control"
-							style="height: 130px;"></textarea>
-						<button id="btn-request" name="btn-request">Request It now
-							
-						</button>
-					</form>
-
-				</div>
-			</div>
-
-
+	<div class="container mt-5 text-center">
+		<div class="row ">
+			<h1 class="f-gold w-100"> Request Demo </h1>
 		</div>
 	</div>
+
+	<div class="container-contact100 mt-5">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="POST" enctype="multipart/form-data">
+				<span class="contact100-form-title">
+					Send Us A Message
+				</span>
+
+				<label class="label-input100" for="first-name">Tell us your name *</label>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+					<input class="input100" type="text" name="last-name" placeholder="Last name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email">Enter your email *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone">Enter phone number</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message">Message *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Send Message
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/request-demo/bg-01.jpg');">
+				<div class="flex-w size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-map-marker"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Address
+						</span>
+
+						<span class="txt2">
+							Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Lets Talk
+						</span>
+
+						<span class="txt3">
+							+1 800 1236879
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-envelope"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							General Support
+						</span>
+
+						<span class="txt3">
+							contact@example.com
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="dropDownSelect1" style="background-color: #f2f2f2;"></div>
+
+
+
 	<!-- footer -->
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
-		<div class="container-fluid">
+		<div class="container-fluid" style="background-color: #f2f2f2;">
 			<div class="row">
 				<div class="footer col-12">
 					<div class="bubbles ">
@@ -609,8 +696,38 @@
 
 		</div>
 	</footer>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/reqs-main.js"></script>
+	
+<!--===============================================================================================-->
+	<script src="vendor-request-demo/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor-request-demo/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor-request-demo/bootstrap/js/popper.js"></script>
+	<script src="vendor-request-demo/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor-request-demo/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor-request-demo/daterangepicker/moment.min.js"></script>
+	<script src="vendor-request-demo/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor-request-demo/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/request-demo/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
