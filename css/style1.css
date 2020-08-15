@@ -1,4 +1,36 @@
-/*!
+.cardfoot {
+  padding: 0% 4% !important;
+  color: #646771;
+  background-color: #000000;
+}
+
+.bg-color {
+
+  background-color: #9e8751 !important;
+
+}
+
+.ftco-footer .subscribe-form .form-group .submit {
+  color: #fff !important;
+  font-size: 16px;
+  background: #9e8751 !important;
+}
+
+.ftco-footer .ftco-footer-widget h2 {
+  font-weight: normal;
+  color: #9e8751;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ftco-footer .subscribe-form .form-group .submit:hover {
+  cursor: pointer;
+  background: #b1a17c !important;
+}
+.mb-5, .my-5 {
+margin-bottom: 0rem !important;
+}/*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -11408,3 +11440,36 @@ margin-top: 5px;
               .search-test1{
                 margin-left: 0;
               }}
+              .cardfoot {
+                padding: 0% 4% !important;
+                color: #646771;
+                background-color: #000000;
+              }
+          
+              .bg-color {
+          
+                background-color: #9e8751 !important;
+          
+              }
+          
+              .ftco-footer .subscribe-form .form-group .submit {
+                color: #fff !important;
+                font-size: 16px;
+                background: #9e8751 !important;
+              }
+          
+              .ftco-footer .ftco-footer-widget h2 {
+                font-weight: normal;
+                color: #9e8751;
+                margin-bottom: 40px;
+                font-size: 20px;
+                font-weight: 600;
+              }
+          
+              .ftco-footer .subscribe-form .form-group .submit:hover {
+                cursor: pointer;
+                background: #b1a17c !important;
+              }
+              .mb-5, .my-5 {
+              margin-bottom: 0rem !important;
+          }
