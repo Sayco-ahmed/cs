@@ -4113,17 +4113,6 @@ input[type="button"].btn-block {
   padding-left: 0.6em;
   border-radius: 10rem; }
 
-.badge-primary {
-  color: #fff;
-  background-color: #007bff; }
-  a.badge-primary:hover, a.badge-primary:focus {
-    color: #fff;
-    background-color: #0062cc; }
-  a.badge-primary:focus, a.badge-primary.focus {
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
-
 .badge-secondary {
   color: #fff;
   background-color: #6c757d; }
@@ -11408,3 +11397,55 @@ margin-top: 5px;
               .search-test1{
                 margin-left: 0;
               }}
+
+
+
+              /* تعديلات علي قسم ال product */
+
+              
+.badge-primary {
+  color: #9E8752;
+  background-color: #fff;
+border: #9E8752 1px solid;
+border-radius: 30px;
+}
+  a.badge-primary:hover, a.badge-primary:focus {
+    color: #fff;
+    background-color: #0062cc; }
+  a.badge-primary:focus, a.badge-primary.focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+
+   #prod-content:hover .badge-primary{
+      color: #000000;
+      background-color: #9E8752;
+    border: #9E8752 1px solid;
+    }
+
+    .tabulation .nav-pills .nav-item .nav-link.active {
+      color: rgb(252 252 252);
+      background: #9e8751;
+      border: 1px solid #9e8751;
+    }
+
+    /* product img edit */
+
+    .tabulation .tab-content .img{
+      height: 325px !important;
+    }
+
+/* 
+    @media (max-width: 575px) {
+      #footer-logo{
+        width: 200px;
+        height: 100px;
+      }
+    } */
+
+
+    .footer-logo{
+      background-color: #212529;
+      border-radius: 30px;
+
+    }
