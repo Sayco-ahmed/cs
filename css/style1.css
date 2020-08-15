@@ -11443,9 +11443,24 @@ border-radius: 30px;
       }
     } */
 
-
-    .footer-logo{
-      background-color: #212529;
-      border-radius: 30px;
-
+    .ftco-footer .subscribe-form .form-group .submit {
+      color: #fff !important;
+      font-size: 16px;
+      background: #9e8751 !important;
     }
+
+    .ftco-footer .ftco-footer-widget h2 {
+      font-weight: normal;
+      color: #9e8751;
+      margin-bottom: 40px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .ftco-footer .subscribe-form .form-group .submit:hover {
+      cursor: pointer;
+      background: #b1a17c !important;
+    }
+    .mb-5, .my-5 {
+    margin-bottom: 0rem !important;
+}
