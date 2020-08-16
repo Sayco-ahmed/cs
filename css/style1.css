@@ -11463,4 +11463,93 @@ border-radius: 30px;
     }
     .mb-5, .my-5 {
     margin-bottom: 0rem !important;
+} .cardfoot {
+  padding: 0% 4% !important;
+  color: #646771;
+  background-color: #000000;
+}
+
+.bg-color {
+
+  background-color: #9e8751 !important;
+
+}
+
+.ftco-footer .subscribe-form .form-group .submit {
+  color: #fff !important;
+  font-size: 16px;
+  background: #9e8751 !important;
+}
+
+.ftco-footer .ftco-footer-widget h2 {
+  font-weight: normal;
+  color: #9e8751;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ftco-footer .subscribe-form .form-group .submit:hover {
+  cursor: pointer;
+  background: #b1a17c !important;
+}
+.mb-5, .my-5 {
+margin-bottom: 0rem !important;
+}
+.ftco-services .services .icon {
+line-height: 1.3;
+position: relative;
+width: 120px;
+height: 120px;
+background: #fff;
+margin: 0 auto;
+margin-top: -60px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+border-radius: 50%;
+}
+
+.bag-color {
+background: #1d2227 !important;
+}
+
+.baag-color {
+background: #161a1e !important;
+}
+
+.BB-color {
+background: #121518 !important;
+}
+
+.bgbg-color {
+background: #0e1013 !important;
+}
+
+.services .icon span {
+font-size: 50px;
+color: #9e8751 !important;
+}
+
+element.style {}
+
+.services .media-body h3 {
+font-weight: 600;
+font-size: 20px;
+color: #9e8751 !important;
+}
+.bor-30{
+border-radius: 30px !important;
+}.btn.btn-learn{
+	border: 1px solid #9e8751;
+	color:  #9e8751 !important;
+	border-radius: 0;
+	padding: 10px 50px 10px 50px;
+  transition: 0.3s !important;
+  background-color: #fff !important;
+}
+.btn.btn-learn:hover{
+	background: #9e8751 !important;
+	border: 1px solid #9e8751;
+	color: white !important;
 }
