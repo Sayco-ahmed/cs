@@ -4621,6 +4621,7 @@ input[type="button"].btn-block {
   font-weight: 700;
   line-height: 1;
   color: #000;
+ 
   text-shadow: 0 1px 0 #fff;
   opacity: .5; }
   .close:hover {
@@ -10596,7 +10597,7 @@ background-color: #9E8751 !important;
 border-color: #9e8751 !important;
 }
 /* our team */
-teamm{
+/* teamm{
   margin: 0;
   padding: 0;
   display: flex;
@@ -10694,7 +10695,7 @@ font-size: 16px;
 color: #ffffff;
 display: block;
 margin-top: 5px;
- } 
+ }  */
  /* /our team */
  /* our client */
  .m-client{margin-bottom: 50px;}
@@ -12437,4 +12438,20 @@ border-radius: 30px !important;
         .contact-form form button:hover {
             color: #ffffff;
             background: #131313;
+        }
+
+
+        /* تعديلات صفحة المنتج الواحد */
+
+        /* .ftco-introo{
+          z-index: -50 !important;
+        } */
+        .modal{
+          z-index: 1000 !important;
+        }
+        .modal-backdrop{
+          z-index: -10;
+        }
+        .mod{
+          z-index: -50;
         }
