@@ -9259,7 +9259,7 @@ background-color:white; }
   display: inline-block; }
   .ftco-footer-social li a {
     height: 40px;
-    width: 40px;
+    width: 100%;
     display: block;
     float: left;
     background: #00bdaa;
