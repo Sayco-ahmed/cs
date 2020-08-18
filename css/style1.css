@@ -10505,13 +10505,14 @@ body .footer .content > div .image {
 .cardfoot {
   padding: 2% 7%;
   color: #646771;
-  background-color: #000000
+  background-color: #000000;
+
 }
 
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 ul>li {
@@ -10543,7 +10544,7 @@ hr {
 
 .heading {
   font-family: 'Titillium Web', sans-serif;
-  color: white
+  color: white !important;
 }
 
 .divider {
@@ -11463,11 +11464,12 @@ border-radius: 30px;
     }
     .mb-5, .my-5 {
     margin-bottom: 0rem !important;
-} .cardfoot {
+} 
+/* .cardfoot {
   padding: 0% 4% !important;
   color: #646771;
   background-color: #000000;
-}
+} */
 
 .bg-color {
 
