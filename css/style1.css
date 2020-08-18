@@ -9259,7 +9259,7 @@ background-color:white; }
   display: inline-block; }
   .ftco-footer-social li a {
     height: 40px;
-    width: 100%;
+    width: 40px;
     display: block;
     float: left;
     background: #00bdaa;
@@ -11634,7 +11634,8 @@ border-radius: 30px !important;
         }
 
         .touch h2 {
-            padding-top: 20px;
+            padding-top: 40px;
+            margin-top: 70px;
             text-align: center;
         }
 
@@ -11714,7 +11715,7 @@ border-radius: 30px !important;
             position: relative;
             width: 41rem;
             height: 0rem;
-            margin: 2rem auto 0;
+            margin: 1rem auto 0;
         }
 
         #map {
@@ -12455,3 +12456,39 @@ border-radius: 30px !important;
         .mod{
           z-index: -50;
         }
+
+        .button {
+          padding: 0.20em 1em;
+          text-align: center;
+          text-decoration: none;
+          color: #9e8751;
+          border: 2px solid #9e8751;
+          font-size: 24px;
+          display: inline-block;
+          border-radius: 0.3em;
+          transition: all 0.2s ease-in-out;
+          position: relative;
+          overflow: hidden;
+       }
+        .button:before {
+          content: "";
+          background-color: rgba(255, 255, 255, 0.5);
+          height: 100%;
+          width: 3em;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -4.5em;
+          transform: skewX(-45deg) translateX(0);
+          transition: none;
+       }
+        .button:hover {
+          background-color: #9e8751;
+          color: #fff;
+          border-bottom: 4px solid #c2a666;
+       }
+        .button:hover:before {
+          transform: skewX(-45deg) translateX(13.5em);
+          transition: all 0.5s ease-in-out;
+       }
+        
