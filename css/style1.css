@@ -13138,7 +13138,7 @@ border-radius: 30px !important;
 }
 }
 
-.btn.w-btn {
+/* .btn.w-btn {
   padding: 18px 65px 18px 33px;
 }
 .btn {
@@ -13167,7 +13167,7 @@ border-radius: 30px !important;
 .btn.focus, .btn:focus {
   outline: 0;
   box-shadow: none;
-}
+} */
 
 
 .collapse-wrapper .card {
