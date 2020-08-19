@@ -3955,7 +3955,9 @@ input[type="button"].btn-block {
     .card-columns .card {
       display: inline-block;
       width: 100%; } }
-
+.accordion{
+  background-color: transparent;
+}
 .accordion > .card {
   overflow: hidden; }
   .accordion > .card:not(:first-of-type) .card-header:first-child {
@@ -12782,11 +12784,42 @@ border-radius: 30px !important;
   .about-area {
   display: block;
 }
-}.about-area .about-img {
-  background-image: url(../images/serviceimg/about-img1.png);
+}
+.about-area .about-img {
+  background-image: url(../images/top-10-accounting-firms.jpg);
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 700px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+.img3 {
+ 
+
+  height: 700px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+.img4 {
+ 
+
   height: 700px;
   width: 50%;
   display: -webkit-box;
@@ -12814,6 +12847,7 @@ border-radius: 30px !important;
   width: 100%;
   height: 600px;
 }
+
 }.about-area .about-details {
   background-size: 100%;
   background-size: cover;
@@ -12914,6 +12948,7 @@ border-radius: 30px !important;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+ 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-area2 {
@@ -12928,7 +12963,7 @@ border-radius: 30px !important;
   display: block;
 }
 }.about-area2 .about-img2 {
-  background-image: url(../images/serviceimg/about-img2.png);
+  background-image: url(../images/best-selling-online-products-in-nigeria.jpg);
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13169,10 +13204,13 @@ border-radius: 30px !important;
   box-shadow: none;
 } */
 
-
+.about-details2{
+  overflow: hidden;
+}
 .collapse-wrapper .card {
   border: 0em;
   border-radius: 0;
+  
 }
 .collapse-wrapper .card:last-child {
   margin-bottom: 0px;
@@ -13189,13 +13227,16 @@ border-radius: 30px !important;
   color: #726d50;
   display: block;
   text-decoration: none;
-  border-bottom: 1px solid #EFEFEF !important;
+  border-bottom: 1px solid #aaaaaa !important;
+  
 }
 .collapse-wrapper .card-header a.btn-link {
   color: #9e8751;
 }
 .collapse-wrapper .card-header a.collapsed {
-  color: #000000;
+  color: #9e8751;
+  
+  
 }
 /* .collapse-wrapper .card-header h2 a.collapsed::after {
   content: "\e61a";
