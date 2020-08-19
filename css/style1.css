@@ -12554,7 +12554,7 @@ border-radius: 30px !important;
   padding-bottom: 90px;
 }
 }.slider-area .single-slider .slider-cap-wrapper .hero-caption span {
-  color: #010A44;
+  color: #000000;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -12597,7 +12597,7 @@ border-radius: 30px !important;
 }.slider-area .single-slider .slider-cap-wrapper .hero-caption p {
   margin-bottom: 39px;
   display: block;
-  color: #010A44;
+  color: #000000;
   font-size: 20px;
   padding-right: 50px;
 }
@@ -12887,7 +12887,7 @@ border-radius: 30px !important;
 }
 }.footer-tittles p {
   padding-bottom: 22px;
-  color: #1D2547;
+  color: #9e8751;
   font-size: 16px;
 }
 .footer-tittles h2 {
@@ -12992,7 +12992,7 @@ border-radius: 30px !important;
   width: inherit;
 }
 .about-area2 .about-img2 .info-man2 .head-cap2 h3 {
-  color: #FD8F5F;
+  color: #9e8751;
   font-size: 40px;
   font-weight: 600;
   padding-left: 15px;
@@ -13003,7 +13003,7 @@ border-radius: 30px !important;
   font-size: 34px;
 }
 }.about-area2 .about-img2 .info-man2 p {
-  color: #010A44;
+  color: #000000;
   margin: 0;
   line-height: 1.5;
 }
@@ -13095,7 +13095,7 @@ border-radius: 30px !important;
   margin-bottom: 50px;
 }
 }.section-tittle p {
-  color: #1D2547;
+  color: #1d3447;
 }
 .section-tittle span {
   font-size: 14px;
@@ -13103,12 +13103,12 @@ border-radius: 30px !important;
   margin-bottom: 22px;
   font-family: "Raleway", sans-serif;
   display: inline-block;
-  color: #010A44;
+  color: #000000;
 }
 .section-tittle h2 {
   font-size: 40px;
   display: block;
-  color: #072366;
+  color: #000000;
   font-weight: 700;
   text-transform: normal;
   line-height: 1.4;
@@ -13186,27 +13186,27 @@ border-radius: 30px !important;
 .collapse-wrapper .card-header a {
   font-size: 16px;
   padding: 20px 15px 20px 41px;
-  color: #506072;
+  color: #726d50;
   display: block;
   text-decoration: none;
   border-bottom: 1px solid #EFEFEF !important;
 }
 .collapse-wrapper .card-header a.btn-link {
-  color: #FD8F5F;
+  color: #9e8751;
 }
 .collapse-wrapper .card-header a.collapsed {
-  color: #010A44;
+  color: #000000;
 }
-.collapse-wrapper .card-header h2 a.collapsed::after {
+/* .collapse-wrapper .card-header h2 a.collapsed::after {
   content: "\e61a";
   font-weight: 800;
-  color: #FD8F5F;
-}
-.collapse-wrapper .card-header h2 a::after {
+  color: #9e8751;
+} */
+/* .collapse-wrapper .card-header h2 a::after {
   position: absolute;
   top: 22px;
   font-size: 15px;
-  color: #FD8F5F;
+  color: #9e8751;
   left: 8px;
   font-weight: 600;
   content: "\e622";
@@ -13214,23 +13214,11 @@ border-radius: 30px !important;
 .collapse-wrapper .card-body {
   background: #fff;
   padding: 20px 38px;
+} */
+
+.about-area2 .about-img2 .info-man2 .head-cap2 img {
+  width: 50px !important;
+  height: 50px !important;
 }
 
-
-.collapse-wrapper .card-header h2 a.collapsed::after {
-  content: "\e61a";
-  font-weight: 800;
-  color: #FD8F5F;
-}
-
-.collapse-wrapper .card-header h2 a::after {
-  position: absolute;
-  top: 22px;
-  font-size: 15px;
-  color: #FD8F5F;
-  left: 8px;
-  font-weight: 600;
-  content: "\e622";
-  font-family: 'themify';
-}
 /* نهاية الجزء الخاص بصفحة ال  service */
