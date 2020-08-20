@@ -13854,3 +13854,60 @@ hr {
 }
 .blog_right_sidebar .search_widget .input-group button {
   background: #9e8751;}
+  .m-120{
+    margin-bottom: 120px !important;
+  }
+  .dista{
+    line-height: 30px;
+  }
+  .mb-10{
+    margin-bottom: 75px !important ;
+  }
+  .page-color{
+    color: #9e8751 !important;
+  }
+  .pa-color{
+    color: #a89e85 !important;
+}
+.site-section {
+    padding: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+    .site-section {
+        padding: 5em 0;
+    }
+}
+
+.site-section.site-section-sm {
+    padding: 4em 0;
+}
+
+.site-section-heading {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .site-section-heading {
+        font-size: 3rem;
+    }
+}
+
+.block-2 {
+    background: #1D2227 !important;
+    padding: 7rem 0;
+}
+
+.block-2 .img-overlap {
+    margin-top: -150px;
+}
+.blok-2{
+    background-color: #f3f1eb !important;
+}
+.colr-wite{
+    color: aliceblue;
+}
