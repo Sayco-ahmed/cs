@@ -11305,6 +11305,11 @@ border-radius: 30px !important;
             width: 100%;
         }
 
+<<<<<<< HEAD
+.page-color{
+  color: #9e8751 !important;
+}
+=======
         .aa-contact-us-page-hero-image::after {
             content: " ";
             background-size: cover;
@@ -11321,6 +11326,7 @@ border-radius: 30px !important;
         aa-contact-us-page-hero-image .text-container {
             max-width: 600px;
         }
+>>>>>>> 5d4ac93f2250ca788457ba51e7226397b75e16bc
 
         .aa-contact-us-page-hero-image h2 {
             font-weight: bold;
