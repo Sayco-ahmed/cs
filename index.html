@@ -27,7 +27,54 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-
+.wraapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideer {
+  width: 1000px;
+  height: 200px;
+  position: relative;
+  background:#1d2227;
+  /* box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2); */
+  display: flex;
+  overflow: hidden;
+}
+.slidee {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 8s linear infinite;
+}
+.slidee img {
+  height: 150px;
+  padding: 0 30px 0 30px;
+ 
+}
+@keyframes slideshow {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%);}
+}
+.slideer::before, .slideer::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  /* background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%); */
+  z-index: 2;
+}
+.slideer::before {
+  left: 0;
+  top: 0;
+}
+.slideer::after {
+  right:0;
+  top:0;
+  transform: rotateZ(180deg);
+}
 </style>
 </head>
 
@@ -988,7 +1035,7 @@
 	<!-- ------------------------------------------------------------------------ -->
 	<!-- ------------------------------------------------------------------------ -->
 	<!-- start our cilent-->
-	 <div class="cover-wrapperr">
+	 <!-- <div class="cover-wrapperr">
 		<div class="col-md-12 text-center heading-section ftco-animate m-client"><br>
 			<h1 class="mb-4 f-gold">our client</h1>
 		</div>
@@ -1041,8 +1088,38 @@
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>  -->
+	<section>
+			<h1 class="mb-2 f-gold text-center ftco-animated font-weight-bolder">our client</h1>
 
+			<div class="wraapper">
+			
+			
+			
+					<div class="slideer">
+					  <div class="slidee">
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+					  </div>
+					  <!-- <div class="slide">
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+						<img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" />
+					  </div> -->
+					</div>
+				</div>
+		
+	</section>
+	
 	<!-- end our client -->
 	<!-- ------------------------------------------------------------------------ -->
 	<!-- ------------------------------------------------------------------------ -->
