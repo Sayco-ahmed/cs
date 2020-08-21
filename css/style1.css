@@ -9059,7 +9059,7 @@ background-color:white; }
       font-size: 14px; }
   .blog-entry .meta-date {
     display: inline-block;
-    background: #f1648f; }
+    background: #9e8751; }
     .blog-entry .meta-date span {
       display: block;
       color: #fff; }
@@ -10248,15 +10248,15 @@ background-color:white; }
   border-radius: 30px;
 }
 .tec-sec .custom-prev{
-  background-color:#000 ;
-  color:#fff;
+  background-color:#fff ;
+  color:#000;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
 
 .tec-sec .custom-direction .custom-next{
-  background-color:#000 ;
-  color:#fff !important;
+  background-color:#fff ;
+  color:#000 !important;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
 }
@@ -10957,10 +10957,10 @@ margin-top: 5px;
 		overflow: hidden;
 		}
 		.section-title{
-		text-align: center;
-		color: #9e8751;
-		text-transform: uppercase;
-		font-size: 30px;
+		text-align: center !important;
+		color: #9e8751 !important;
+		text-transform: uppercase !important;
+		font-size: 27px !important;
 		}
 		.border{
 		width: 160px;
@@ -12817,7 +12817,14 @@ border-radius: 30px !important;
   .about-area2 .about-img2 .info-man2.info-man3 {
   display: none !important;
 }
-}.about-area2 .about-details2 {
+
+}
+
+.about-details2.d-block.d-lg-none{
+  height: fit-content;
+}
+
+.about-area2 .about-details2 {
   height: 700px;
   width: 50%;
   padding: 85px 29px;
@@ -13309,7 +13316,7 @@ img {
   display: block;
   margin-bottom: 5px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.2); }
+  color: #9e8751; }
 
   
 .heading-section.heading-section-white .subheading {
@@ -14385,20 +14392,20 @@ height:400px;
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   overflow: hidden;
 }
 
 
 .section-title {
-  text-align: left;
+  text-align: center;
   padding-bottom: 30px;
 }
 
 .section-title h2 {
   font-size: 13px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 8px 20px;
   margin: 0;
   background: #e7f1fd;
