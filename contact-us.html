@@ -46,41 +46,243 @@
     <link rel="stylesheet" type="text/css" href="css/request-demo/util.css">
     <link rel="stylesheet" type="text/css" href="css/request-demo/main.css">
     <!--===============================================================================================-->
+    <style>
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            text-transform: uppercase;
+        }
+
+        .myButt {
+            outline: none;
+            border: none;
+            padding: 10px;
+            display: block;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: transparent;
+            position: relative;
+            border: 2px solid rgb(0, 0, 0);
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+        }
+
+        .one {
+            border-color: rgb(0, 0, 0);
+            overflow: hidden;
+            color: rgb(0, 0, 0);
+        }
+
+        .one .insider {
+            background-color: #fff;
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            left: -135px;
+            transform: rotateZ(45deg);
+            -webkit-transform: rotateZ(45deg);
+            -moz-transform: rotateZ(45deg);
+            -o-transform: rotateZ(45deg);
+            -ms-transform: rotateZ(45deg);
+        }
+
+        .one:hover {
+            background-color: #f44336;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .one:hover .insider {
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            left: 135px;
+        }
+
+        .two {
+            color: rgb(0, 0, 0);
+        }
+
+        .two:hover {
+            border-color: #9e8751;
+            color: #9e8751;
+            animation: shakeThatBooty 0.3s linear 1;
+            -webkit-animation: shakeThatBooty 0.3s linear 1;
+            -moz-animation: shakeThatBooty 0.3s linear 1;
+            -o-animation: shakeThatBooty 0.3s linear 1;
+            -ms-animation: shakeThatBooty 0.3s linear 1;
+        }
+
+        @keyframes shakeThatBooty {
+            33% {
+                transform: rotateZ(10deg);
+                -webkit-transform: rotateZ(10deg);
+                -moz-transform: rotateZ(10deg);
+                -o-transform: rotateZ(10deg);
+                -ms-transform: rotateZ(10deg);
+            }
+
+            67% {
+                transform: rotateZ(-10deg);
+                -webkit-transform: rotateZ(-10deg);
+                -moz-transform: rotateZ(-10deg);
+                -o-transform: rotateZ(-10deg);
+                -ms-transform: rotateZ(-10deg);
+            }
+
+            100% {
+                transform: rotateZ(10deg);
+                -webkit-transform: rotateZ(10deg);
+                -moz-transform: rotateZ(10deg);
+                -o-transform: rotateZ(10deg);
+                -ms-transform: rotateZ(10deg);
+            }
+        }
+
+        .three {
+            color: #000000;
+            border-color: transparent;
+        }
+
+        .three:before,
+        .three:after {
+            width: 0;
+            height: 3px;
+            content: " ";
+            background-color: #9e8751;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+        }
+
+        .three:after {
+            top: 100%;
+        }
+
+        .three:hover {
+            letter-spacing: 8px;
+            color: #9e8751;
+        }
+
+        .three:hover:before,
+        .three:after:hover {
+            width: 100%;
+            left: 0;
+        }
+
+        .three:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .four {
+            overflow: hidden;
+        }
+
+        .four span {
+            color: #fff;
+            display: inline-block;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+        }
+
+        .four .icon {
+            position: absolute;
+            left: -60px;
+            top: 0;
+            color: #fff;
+            padding: 20px;
+            background-color: #f44336;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+        }
+
+        .four:hover .icon {
+            left: 0px;
+        }
+
+        .four:hover span {
+            color: #f44336;
+            margin-left: 50px;
+        }
+
+        .five {
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .five .layer {
+            color: #fff;
+            position: absolute;
+            top: -70px;
+            width: 100%;
+            left: 0;
+            padding: 20px 0;
+            background-color: #f44336;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+        }
+
+        .five:hover .layer {
+            top: 0;
+        }
+    </style>
 </head>
 
 <body>
     <!--===============================================================================================-->
     <nav class="navbar navbar-expand-lg ftco_navbar  ftco-navbar-light p-3" id="ftco-navbar">
-		<div class="container">
+        <div class="container">
 
-			<img src="images/logo/main-senior-logo-white.png" alt="" srcset="" class="navbar-brand" width="230px"
-				height="70px">
-			<!-- <a class="navbar-brand" href="index.html">senior <span style="color: rgb(196, 151, 4);"
+            <img src="images/logo/main-senior-logo-white.png" alt="" srcset="" class="navbar-brand" width="230px"
+                height="70px">
+            <!-- <a class="navbar-brand" href="index.html">senior <span style="color: rgb(196, 151, 4);"
 					class="text-center   ">Consulting</span></a> -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
+            <div class="collapse navbar-collapse" id="ftco-nav">
 
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="ourserv.html" class="nav-link">Servicess</a></li>
-					<li class="nav-item"><a href="reqest-demo.html" class="nav-link">Request Demo</a></li>
-					<li class="nav-item"><a href="prod-all.html" class="nav-link">Products</a></li>
-					<li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
-				</ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="ourserv.html" class="nav-link">Servicess</a></li>
+                    <li class="nav-item"><a href="reqest-demo.html" class="nav-link">Request Demo</a></li>
+                    <li class="nav-item"><a href="prod-all.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+                </ul>
 
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2 search-test1" type="search" placeholder="Search"
-						aria-label="Search" style="height: 38px !important;">
-					<button class="btn btn-outline-success my-2 my-sm-0 search-test" type="submit">Search</button>
-				</form>
-			</div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 search-test1" type="search" placeholder="Search"
+                        aria-label="Search" style="height: 38px !important;">
+                    <button class="btn btn-outline-success my-2 my-sm-0 search-test" type="submit">Search</button>
+                </form>
+            </div>
 
-		</div>
-	</nav>
+        </div>
+    </nav>
     <!--===============================================================================================-->
     <!--===============================end of navbar section=============================================-->
     <!--===============================================================================================-->
@@ -91,21 +293,22 @@
         <div class="row">
             <div class="Hero Parallax aa-contact-us-page-hero-image col-xs-12">
                 <div class="row">
-                    <div class="col-xs-6 col-xs-offset-3 col text-container">
+                    <div style="position: relative; bottom: 150px" class="col-xs-6 col-xs-offset-3 col text-container">
                         <h2>Contact&nbsp;Us</h2>
                         <h3>If you’re thinking about studying abroad, sing up for our contact list! We will contact you
                             within 24h.</h3>
                     </div>
                 </div>
-                <a class="contact-form-anchor-link">
+                <!-- <a class="contact-form-anchor-link">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle-thin fa-stack-2x"></i>
                         <i class="fa fa-angle-down fa-stack-1x" style="font-size: 1.5em;"></i>
                     </span>
-                </a>
+                </a> -->
             </div>
         </div>
 
+
     </div>
     </div>
 
@@ -115,8 +318,6 @@
 
 
 
-
-    <!--address-->
 
 
     <div class="touch">
@@ -139,10 +340,10 @@
     </div>
     <section class="contact-address-area">
         <div class="container">
-            
+
             <div class="sec-title-style1 text-center max-width">
 
-           
+
             </div>
             <div class="contact-address-box row">
                 <!--Start Single Contact Address Box-->
@@ -204,22 +405,21 @@
                         </span>
                     </div>
                     <h3>Lorem Ipsum</h3>
-                    <h2>Lorem Ipsum is simply dummy</h2 </div>
-                    <!--End Single Contact Address Box-->
+                    <h2>Lorem Ipsum is simply dummy</h2 </div> <!--End Single Contact Address Box-->
                 </div>
             </div>
     </section>
 
 
 
-    
+
 
     <div class="touch" style="margin-top: 20rem;">
         <h2>Get in touch</h2>
         <hr class="redline">
     </div>
 
-    <form action="" method="POST" name="contact-form" style="position: relative; top: 50px; " >
+    <form action="" method="POST" name="contact-form" style="position: relative; top: 50px; ">
         <div class="container form-margin">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
@@ -232,7 +432,7 @@
                         <input type="text" class="form-control" placeholder="Company Name" ng-model="company"
                             name="company" required>
                     </div>
-               <!--      <div class="form-group">
+                    <!--      <div class="form-group">
                         <input type="text" class="form-control" placeholder="Phone" ng-model="phone" name="firstname"
                             required>
                     </div> -->
@@ -246,7 +446,7 @@
                         <input type="email" class="form-control" placeholder="E-mail" ng-model="email" name="email"
                             required>
                     </div>
-                   <!--  <div class="form-group">
+                    <!--  <div class="form-group">
                         <input type="text" class="form-control" placeholder="Course" ng-model="course" name="course"
                             required>
                     </div> -->
@@ -254,7 +454,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
@@ -278,15 +478,29 @@
                         <textarea class="form-control" rows="6" placeholder="Message" ng-model="message" name="message"
                             required></textarea>
                     </div>
-                   <!--  <div class="pager">
+                    <!--  <div class="pager">
                         <button class="btn fourth">SEND MESSAGE </button>
                     </div> -->
 
                     <div class="wrapper">
-                        <a href="#" class="button">SEND MESSAGE
-                      !</a>
-                      </div>
-                      
+                        <!--   <a href="#" class="button">
+                            !</a> -->
+                        <!-- <main class='container'>
+                            <button class='myButt three'>
+                               SEND MESSAGE
+                            </button>
+                        </main>
+ -->
+
+                        <main class='container'>
+                            <button class='myButt two'>
+                                Hover over me
+                            </button>
+                        </main>
+
+                    </div>
+
+
                 </div>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
