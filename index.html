@@ -26,68 +26,86 @@
 	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		
-		.hi-slide { position: relative; width: 754px; height: 292px; margin: 115px auto 0; }
-            
-			.hi-slide .hi-next,
-			.hi-slide .hi-prev 
-						{ position: absolute;
-						  top: 50%; 
-						  width: 40px;
-						  height: 40px; 
-						  margin-top: -20px;     
-							border-radius: 50px; 
-							 
-							
-						  line-height: 40px;
-						  text-align: center; 
-						  cursor: pointer;
-						  background-color: #fff; 
-						  color: black;               
-						  transition: all 0.3s;
-						  font-size: 20px; 
-							font-weight: bold;
-						}
-					   .hi-slide .hi-next:hover, 
-						.hi-slide .hi-prev:hover 
-						{
-						opacity: 1; 
-						background-color: #fff;  
-						}
-						
-					   .hi-slide .hi-prev { left: -60px; }
-						
-				.hi-slide .hi-prev::before { content: '<'; }
-				.hi-slide .hi-next { right: -60px; }
-				.hi-slide .hi-next::before { content: '>'; }
-				
-						.hi-slide > ul
-								{ 
-									list-style: none; 
-									position: relative;
-									width: 754px; 
-									height: 292px; 
-									margin: 0;
-									padding: 0;
-						}
-						
-						
-					.hi-slide > ul > li {
-						overflow: hidden; 
-						position: absolute; 
-						z-index: 0; 
-						left: 377px;
-						top: 146px; 
-						width: 0; 
-						height: 0; 
-						margin: 0; 
-						padding: 0;
-						border: 3px solid #fff;              
-						background-color: #333; 
-						cursor: pointer; }
-						
-					.hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
-			
+		.hi-slide {
+			position: relative;
+			width: 754px;
+			height: 292px;
+			margin: 115px auto 0;
+		}
+
+		.hi-slide .hi-next,
+		.hi-slide .hi-prev {
+			position: absolute;
+			top: 50%;
+			width: 40px;
+			height: 40px;
+			margin-top: -20px;
+			border-radius: 50px;
+
+
+			line-height: 40px;
+			text-align: center;
+			cursor: pointer;
+			background-color: #fff;
+			color: black;
+			transition: all 0.3s;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.hi-slide .hi-next:hover,
+		.hi-slide .hi-prev:hover {
+			opacity: 1;
+			background-color: #fff;
+		}
+
+		.hi-slide .hi-prev {
+			left: -60px;
+		}
+
+		.hi-slide .hi-prev::before {
+			content: '<';
+		}
+
+		.hi-slide .hi-next {
+			right: -60px;
+		}
+
+		.hi-slide .hi-next::before {
+			content: '>';
+		}
+
+		.hi-slide>ul {
+			list-style: none;
+			position: relative;
+			width: 754px;
+			height: 292px;
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.hi-slide>ul>li {
+			overflow: hidden;
+			position: absolute;
+			z-index: 0;
+			left: 377px;
+			top: 146px;
+			width: 0;
+			height: 0;
+			margin: 0;
+			padding: 0;
+			border: 3px solid #fff;
+			background-color: #333;
+			cursor: pointer;
+		}
+
+		.hi-slide>ul>li>img {
+			width: 100%;
+			height: 100%;
+			background-position: center;
+		}
+
 		.bbox {
 			font-family: 'Roboto Condensed', sans-serif;
 			overflow-x: hidden;
@@ -97,26 +115,222 @@
 
 
 		}
-		
+
 
 		.testimony-wrap .icon {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background:none !important;
-}
+			position: absolute;
+			top: -20px;
+			left: 20px;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: none !important;
+		}
 
 
 
 
 
-		
+
 		.fa-quote-left:before {
-    content: "\f10d";
-    font-size: xx-large;}
+			content: "\f10d";
+			font-size: xx-large;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+		/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+		/* body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+		:root {
+			--marquee-width: 80vw;
+			--marquee-height: 20vh;
+			--marquee-elements: 12;
+			/* defined with JavaScript */
+			--marquee-elements-displayed: 5;
+			--marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+			--marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+		}
+
+		.rebo {
+			font-family: 'Montserrat', sans-serif;
+			background-color: #eee;
+			color: #111;
+			/* height: 100vh; */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.marquee {
+			width: var(--marquee-width);
+			height: var(--marquee-height);
+			background-color: #111;
+			color: #eee;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.marquee:before,
+		.marquee:after {
+			position: absolute;
+			top: 0;
+			width: 10rem;
+			height: 100%;
+			content: "";
+			z-index: 1;
+		}
+
+		.marquee:before {
+			left: 0;
+			background: linear-gradient(to right, #111 0%, transparent 100%);
+		}
+
+		.marquee:after {
+			right: 0;
+			background: linear-gradient(to left, #111 0%, transparent 100%);
+		}
+
+		.marquee-content {
+			list-style: none;
+			height: 100%;
+			display: flex;
+			animation: scrolling var(--marquee-animation-duration) linear infinite;
+		}
+
+		/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+		@keyframes scrolling {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+			}
+		}
+
+		.marquee-content li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* text-align: center; */
+			flex-shrink: 0;
+			width: var(--marquee-element-width);
+			max-height: 100%;
+			font-size: calc(var(--marquee-height)*3/4);
+			/* 5rem; */
+			white-space: nowrap;
+		}
+
+		.marquee-content li img {
+			width: 100%;
+			/* height: 100%; */
+			border: 2px solid #eee;
+		}
+
+		.marquee-content li h2 {
+			width: 100%;
+			/* height: 100%; */
+
+			color: white;
+
+
+			font-size: bold;
+		}
+
+		@media (max-width: 600px) {
+			html {
+				font-size: 12px;
+			}
+
+			:root {
+				--marquee-width: 100vw;
+				--marquee-height: 16vh;
+				--marquee-elements-displayed: 3;
+			}
+
+			.marquee:before,
+			.marquee:after {
+				width: 5rem;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.introo {
+  height: 100vh;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center;
+  text-align: center; */
+  /* letter-spacing: 0.1rem; */
+/*   background: linear-gradient(45deg, #ffcc5c 33%, rgba(0,0,0,0.6) 35%), url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66);
+  background-size: cover; */
+  /* background: repeating-linear-gradient(45deg, #ff6f69 0%, #ff6f69 5%, #ffcc5c 5%, #ffcc5c 10%); */
+  background: linear-gradient(45deg, #9e8751 20%, #9e8751 20% 50%, black 50% 80%, black 80%);
+}
+.introo-body {
+  border: 5px solid #fff;
+  padding: 2rem 3rem;
+  background-color: rgba(0,0,0,0.2);
+}
+/* .intro h1 {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+.intro p {
+  font-size: 1.75rem;
+} */
+
+@media (max-width: 700px) {
+  html { font-size: 12px; }
+  .introo-body { border: 3px solid #fff; padding: 1.5rem 2rem; }
+  .introo h1 { font-size: 2.5rem; }
+  .introo p { font-size: 1.25rem; }
+}
 	</style>
 </head>
 
@@ -262,9 +476,10 @@
 						<div class="text">
 							<h2>Web development</h2>
 							<p>Web development refers to building, creating, and an maintaining websites. It includes
-								aspects such as web design, web publishing, web programming, 
+								aspects such as web design, web publishing, web programming,
 								Lorem ipsum dolor sit amet consectetur adipisicing eli
-								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet consectetur adipisicing eli
+								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet
+								consectetur adipisicing eli
 								Lorem ipsum dolor sit amet consectetur adipisicing eli
 							</p>
 						</div>
@@ -280,7 +495,8 @@
 							<p>Mobile app development is the act or process by which a mobile app is developed for
 								mobile devices.
 								Lorem ipsum dolor sit amet consectetur adipisicing eli
-								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet consectetur adipisicing eli
+								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet
+								consectetur adipisicing eli
 								Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
 						</div>
 					</div>
@@ -294,7 +510,8 @@
 							<h2>networking</h2>
 							<p>A network is defined as a group of two or more computer systems linked together. ...
 								local-area networks (LANs)Lorem ipsum dolor sit amet consectetur adipisicing eli
-								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet consectetur adipisicing eli
+								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet
+								consectetur adipisicing eli
 								Lorem ipsum dolor sit amet consectetur adipisicing eli.</p>
 						</div>
 					</div>
@@ -308,7 +525,8 @@
 							<h2>Outsourcing</h2>
 							<p>Outsourcing is the business practice of hiring a party outside a company to perform
 								services and create.Lorem ipsum dolor sit amet consectetur adipisicing eli
-								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet consectetur adipisicing eli
+								Lorem ipsum dolor sit amet consectetur adipisicing eliLorem ipsum dolor sit amet
+								consectetur adipisicing eli
 								Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
 						</div>
 					</div>
@@ -406,11 +624,206 @@
 	<!--===============================start technology section  =============================================-->
 	<!--===============================================================================================-->
 
-	<section class="site-section mt-5 tec-sec">
+
+
+
+	<header class="introo">
+			<div class="">
+					<section class="site-section mt-5 tec-sec " >
+							<div class="container">
+					
+								<div class="row mb-5 justify-content-center">
+									<div class="col-md-7 text-center" >
+										<h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Technologies</h2>
+										<p class="lead colr-wite" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor, sit amet consectetur
+											adipisicing elit. Voluptas fugiat molestiae eligendi repudiandae error?</p>
+									</div>
+								</div>
+					
+								<div class="row align-items-lg-center">
+									<div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+					
+										<div class="owl-carousel slide-one-item-alt">
+											<img src="images/logo/2023.jpg" alt="Image" class="img-fluid">
+											<img src="images/logo/55.jpg" alt="Image" class="img-fluid">
+											<img src="images/logo/2021.jpg" alt="Image" class="img-fluid">
+											<img src="images//logo/Oracl.jpg" alt="Image" class="img-fluid">
+											<img src="images//logo/2024.jpg" alt="Image" class="img-fluid">
+										</div>
+										<div class="custom-direction">
+											<a href="#" class="custom-prev"><span><span class="icon-keyboard_backspace"></span></span></a><a
+												href="#" class="custom-next"><span><span class="icon-keyboard_backspace"></span></span></a>
+										</div>
+					
+									</div>
+									<div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+					
+										<div class="owl-carousel slide-one-item-alt-text">
+											<div>
+												<div>
+													<h2 class="section-title mb-3 colr-wite">01. cisco Infra-structure</h2>
+												</div>
+												<div>
+													<p class="colr-wite">Consolidate management products and reduce the number of tools required to manage the
+														network. Managing your network using Cisco Prime Infrastructure gives you greater
+														visibility and control, with faster deployment and troubleshooting. You can spend
+														more
+														time transforming your business through innovation and differentiation.</p>
+												</div>
+					
+												<!-- <div><p><a href="learn-more-cisco-infra.htm" class="btn btn-primary mr-2 mb-2">Learn More</a></p></div> -->
+					
+					
+											</div>
+											<div>
+												<div>
+													<h2 class="section-title mb-3 colr-wite">02. java android App</h2>
+												</div>
+												<div>
+													<p class="colr-wite">You already know Java as one of the most established programming languages when it
+														comes
+														to developing dynamic content. On the Android platform, Java is faster and more
+														secure
+														than it is on many traditional desktop implementations, allowing us to unlock its
+														full
+														power.</p>
+												</div>
+												<!-- <div><p><a href="learn-more-java-android.html" class="btn btn-primary mr-2 mb-2">Learn More</a></p></div> -->
+					
+					
+					
+											</div>
+											<div>
+												<div>
+													<h2 class="section-title mb-3 colr-wite">03. open source languages</h2>
+												</div>
+												<div>
+													<p class="colr-wite">An open-source language refers to a programming language that falls within the
+														parameters
+														of open-source protocol. This basically means that the language is not proprietary,
+														and
+														with certain provisions (depending on the open source license), can be modified or
+														built
+														upon in a manner that is open to the public.
+													</p>
+												</div>
+												<!-- <div>	<p><a href="learn-open-source.html" class="btn btn-primary mr-2 mb-2">Learn More</a></p></div> -->
+					
+					
+					
+					
+					
+											</div>
+											<div>
+												<div>
+													<h2 class="section-title mb-3 colr-wite">04. Oracle technologies</h2>
+												</div>
+												<div>
+													<p class="colr-wite">The Solution is Consummate Tech Oracle support database consulting services. Where we
+														provide, design, implement and administer, maintenance, proactive monitoring, fine
+														tune,
+														emergency service, & best practices to any Oracle database with our 10+ years of
+														experience team in Oracle.</p>
+												</div>
+												<!-- <div><p><a href="learn-more-orecale.html" class="btn btn-primary mr-2 mb-2">Learn More</a></p></div> -->
+					
+					
+					
+					
+					
+											</div>
+											<div class="">
+												<div>
+													<h2 class="section-title mb-3 colr-wite">05. Microsoft technologies </h2>
+												</div>
+												<div>
+													<p class="colr-wite">Microsoft consumes its own technology and hence they use Microsoft Visual Studio 2008
+														or
+														2010, C#, VC++, SQL Server and IIS. The OS most of the desktop and PCs have is Win7
+														and
+														servers are on WIn2008R2 .</p>
+												</div>
+												<!-- <div><p><a href="learn-more-microsoft.htm" class="btn btn-primary mr-2 mb-2">Learn More</a></p></div> -->
+					
+					
+					
+					
+					
+											</div>
+					
+										</div>
+										<div class="owl-carousel slide-one-item-alt-text">
+											<div>
+					
+												<div>
+													<p><a href="learn-more-cisco-infra.htm" class="btn btn-primary mr-2 mb-2">Learn More</a>
+													</p>
+												</div>
+					
+					
+											</div>
+											<div>
+					
+												<div>
+													<p><a href="learn-more-java-android.html" class="btn btn-primary mr-2 mb-2">Learn
+															More</a></p>
+												</div>
+					
+											</div>
+											<div>
+					
+												<div>
+													<p><a href="learn-open-source.html" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+												</div>
+					
+											</div>
+											<div>
+					
+												<div>
+													<p><a href="learn-more-orecale.html" class="btn btn-primary mr-2 mb-2">Learn More</a>
+													</p>
+												</div>
+					
+											</div>
+											<div class="">
+					
+												<div>
+													<p><a href="learn-more-microsoft.htm" class="btn btn-primary mr-2 mb-2">Learn More</a>
+													</p>
+												</div>
+					
+											</div>
+					
+										</div>
+									</div>
+					
+								</div>
+							</div>
+					
+					
+			</div>
+		  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="site-section mt-5 tec-sec " >
 		<div class="container">
 
 			<div class="row mb-5 justify-content-center">
-				<div class="col-md-7 text-center">
+				<div class="col-md-7 text-center" >
 					<h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Technologies</h2>
 					<p class="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor, sit amet consectetur
 						adipisicing elit. Voluptas fugiat molestiae eligendi repudiandae error?</p>
@@ -576,7 +989,8 @@
 
 			</div>
 		</div>
-	</section>
+
+
 	<!--===============================================================================================-->
 	<!--===============================end technology section  =============================================-->
 	<!--===============================================================================================-->
@@ -900,7 +1314,8 @@
 					<p class="desc dista">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius neque
 						at est
 						laoreet convallis. Fusce eu lacus sit amet felis egestas elementum. Aenean varius, sapien
-						fermentum congue elementum, dolor nunc efficitur massa, quis mattis mi tortor quis metusnunc efficitur massa, quis mattis mi tortor quis metus..</p>
+						fermentum congue elementum, dolor nunc efficitur massa, quis mattis mi tortor quis metusnunc
+						efficitur massa, quis mattis mi tortor quis metus..</p>
 
 
 					<button class="btn btn-learn bor-30 mt-4">Learn More</button>
@@ -1223,32 +1638,134 @@
 			
 			</ul>
 	  </div> -->
-	  
+
 
 
 
 	<!-- end our client -->
 
+	<section>
+		<h1 class="m-120 text-center">our client</h1>
+
+		<div class="rebo">
+
+
+
+			<div class="marquee ">
+				<ul class="marquee-content">
+
+					<li>
+						<h2>  Global And Local Our Clint</h2>
+					</li>
+					<li></li>
+					<li>
+							<h2> Global And Local Our Clint</h2>
+						</li>
+						<li></li>
+						<li>
+								<h2> Global And Local Our Clint</h2>
+							</li>
+							<li></li>
+							<li>
+									<h2>  Global And Local Our Clint</h2>
+								</li>
+								<li></li>
+								<li>
+										<h2>  Global And Local Our Clint</h2>
+									</li>
+									<li></li>
+									<li>
+											<h2> Global And Local Our Clint</h2>
+										</li>
+										<li></li>
+										<li>
+												<h2>  Global And Local Our Clint</h2>
+											</li>
+											<li></li>
+											<li>
+													<h2> Global And Local Our Clint</h2>
+												</li>
+												<li></li>
+												<li>
+														<h2>  Global And Local Our Clint</h2>
+													</li>
+													<li></li>
+
+
+
+
+				</ul>
+			</div>
+		</div>
 
 
 
 
 
-	
+
+
+
+
+
+
+
+		<div class="rebo">
+
+
+
+			<div class="marquee ">
+				<ul class="marquee-content">
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+					<li><img src="images/4.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<!--===============================================================================================-->
 	<!--==============================   fixed button for request   ========================================-->
 	<!--===============================================================================================-->
 	<div class="container">
 		<div class="row">
-			
-				<a href="reqest-demo.html"  class="continue-application" >
+
+			<a href="reqest-demo.html" class="continue-application">
 				<div>
 					<div class="pencil"></div>
 					<div class="folder">
 						<div class="top">
 							<svg viewBox="0 0 24 27">
-								<path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+								<path
+									d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+								</path>
 							</svg>
 						</div>
 						<div class="paper"></div>
@@ -1256,8 +1773,8 @@
 				</div>
 				Request Demo Now
 			</a>
-			
-			
+
+
 			<!-- dribbble - twitter -->
 		</div>
 	</div>
@@ -1267,7 +1784,7 @@
 
 
 
-	
+
 	<!--===============================================================================================-->
 	<!--==============================   start of footer section   ========================================-->
 	<!--===============================================================================================-->
@@ -1665,24 +2182,31 @@
 						<div class="row  w-100 " style="padding-top: 100px; padding-bottom: 50px;">
 							<div class="col-lg-4 col-md-6">
 								<h1 class="page-color mb-2 pt-0 mt-0 ">Senior Consulting</h1>
-								<p class="text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-									 consequatur veritatis minus, excepturi explicabo dolorem repellat, 
-									 minus, excepturi explicabo dolorem repellat minus, excepturi explicabo dolorem repellat
+								<p class="text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Porro,
+									consequatur veritatis minus, excepturi explicabo dolorem repellat,
+									minus, excepturi explicabo dolorem repellat minus, excepturi explicabo dolorem
+									repellat
 									tempore necessitatibus</p>
 							</div>
 							<div class="col-lg-2 col-md-6 ">
 								<h5 class="heading">Have a Questions?</h5>
 
 								<ul>
-									<li class="text-left"><a href="#"><span class="icon icon-map-marker mr-3"></span><span class="text cardfoot">203Fake+2 3923 </span></a></li>
-												
-											
-									
-									<li class="text-left"><a href="#"><span class="icon icon-envelope  mr-3"></span><span
+									<li class="text-left"><a href="#"><span
+												class="icon icon-map-marker mr-3"></span><span
+												class="text cardfoot">203Fake+2 3923 </span></a></li>
+
+
+
+									<li class="text-left"><a href="#"><span
+												class="icon icon-envelope  mr-3"></span><span
 												class="text cardfoot">info@yourdomain.com</span></a></li>
 									<li class="text-left"><a href="#"><span class="icon icon-phone  mr-3 "></span><span
-												class="text cardfoot">+2 392 3929 210</span></a></li>
-									<li class="text-left"><a href="#"><span class="icon icon-envelope  mr-3"></span><span
+												class="text cardfoot">+2
+												392 3929 210</span></a></li>
+									<li class="text-left"><a href="#"><span
+												class="icon icon-envelope  mr-3"></span><span
 												class="text cardfoot">info@yourdomain.com</span></a></li>
 								</ul>
 							</div>
