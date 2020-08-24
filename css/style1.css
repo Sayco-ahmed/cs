@@ -11307,20 +11307,19 @@ border-radius: 30px !important;
             padding-bottom: 170px;
             color: #ffffff;
             text-align: center;
-            background: rgba(49, 63, 84, 0.7) !important;
+            background: rgba(29, 23, 44, 0.5) !important;
             width: 100%;
         }
 
-<<<<<<< HEAD
 .page-color{
   color: #9e8751 !important;
 }
-=======
+
         .aa-contact-us-page-hero-image::after {
             content: " ";
             background-size: cover;
             background-position: center center;
-            background-image: url(../images/wallpaper/senior.jpeg);
+            background-image: url(../images/wallpaper/contact-us.png);
             position: absolute;
             top: 0;
             left: 0;
@@ -11332,8 +11331,6 @@ border-radius: 30px !important;
         aa-contact-us-page-hero-image .text-container {
             max-width: 600px;
         }
->>>>>>> 5d4ac93f2250ca788457ba51e7226397b75e16bc
-
         .aa-contact-us-page-hero-image h2 {
             font-weight: bold;
             font-size: 49px;
@@ -11378,7 +11375,7 @@ border-radius: 30px !important;
             background-color: red;
             border: none;
             position: relative;
-            left: 580px;
+            left: 620px;
         }
 
         .touch h2 {
@@ -14793,6 +14790,25 @@ section {
 }
 
 /* end of btn fixed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .blk-clr{
   color: #000;
 }
