@@ -11206,7 +11206,7 @@ border-radius: 30px;
       background: #b1a17c !important;
     }
     .mb-5, .my-5 {
-    margin-bottom: 0rem !important;
+    margin-bottom: 4.2rem !important;
 } 
 /* .cardfoot {
   padding: 0% 4% !important;
@@ -11239,7 +11239,7 @@ border-radius: 30px;
   background: #b1a17c !important;
 }
 .mb-5, .my-5 {
-margin-bottom: 0rem !important;
+margin-bottom: 4.2rem !important;
 }
 .ftco-services .services .icon {
 line-height: 1.3;
@@ -14734,7 +14734,8 @@ section {
               transition-duration: 500ms;
               margin-bottom: 30px; }
               .single-album img {
-                width: 100%; }
+                width: 100%;
+              height: 196px !important; }
               .single-album .album-info {
                 position: relative;
                 z-index: 1;
@@ -14779,7 +14780,8 @@ section {
                   -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%); }
               .single-album-area img {
-                width: 100%; }
+                width: 100%;
+              height: 196px; }
               .single-album-area .album-info {
                 display: block;
                 position: relative;
@@ -14793,7 +14795,9 @@ section {
                 .single-album-area .album-info p {
                   margin-bottom: 0; }
                     
-
+                  .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next{
+                    color: #9e8751 !important;
+                  }
 
 /* end of new of our client section */
 
