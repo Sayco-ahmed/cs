@@ -14631,6 +14631,171 @@ section {
 
 
 
+/* new of our client section */
+
+.section-padding-100 {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.section-padding-100-0 {
+  padding-top: 100px;
+  padding-bottom: 0; }
+
+.section-padding-0-100 {
+  padding-top: 0;
+  padding-bottom: 100px; }
+
+.section-padding-100-70 {
+  padding-top: 100px;
+  padding-bottom: 70px; }
+
+  
+/* :: 3.4.0 Section Heading */
+.section-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+  text-align: center; }
+  .section-heading p {
+    color: #5f5f5f;
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .section-heading h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .section-heading h2 {
+        letter-spacing: 5px; } }
+  .section-heading.white h2 {
+    color: #fff; }
+  .section-heading.style-2 p {
+    font-size: 16px; }
+  .section-heading.style-2 h2 {
+    font-size: 30px; }
+    @media only screen and (max-width: 767px) {
+      .section-heading.style-2 h2 {
+        font-size: 24px; } }
+
+        .albums-slideshow {
+          position: relative;
+          z-index: 1; }
+          .albums-slideshow .single-album {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            margin-bottom: 0;
+            border: 1px solid transparent; }
+            .albums-slideshow .single-album:hover, .albums-slideshow .single-album:focus {
+              border: 1px solid #000000;
+              box-shadow: none;
+              background-color: #f5f9fa; }
+          .albums-slideshow .owl-prev,
+          .albums-slideshow .owl-next {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            background-color: #fff;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000000;
+            top: 50%;
+            left: -25px;
+            margin-top: -50px;
+            z-index: 50;
+            text-align: center;
+            line-height: 48px;
+            opacity: 0;
+            visibility: hidden; }
+            @media only screen and (max-width: 767px) {
+              .albums-slideshow .owl-prev,
+              .albums-slideshow .owl-next {
+                left: 0; } }
+            .albums-slideshow .owl-prev:hover, .albums-slideshow .owl-prev:focus,
+            .albums-slideshow .owl-next:hover,
+            .albums-slideshow .owl-next:focus {
+              background-color: #000000;
+              color: #fff; }
+          .albums-slideshow .owl-next {
+            left: auto;
+            right: -25px; }
+            @media only screen and (max-width: 767px) {
+              .albums-slideshow .owl-next {
+                right: 0; } }
+          .albums-slideshow:hover .owl-prev,
+          .albums-slideshow:hover .owl-next {
+            opacity: 1;
+            visibility: visible; }
+
+            .single-album {
+              position: relative;
+              z-index: 1;
+              -webkit-transition-duration: 500ms;
+              transition-duration: 500ms;
+              margin-bottom: 30px; }
+              .single-album img {
+                width: 100%; }
+              .single-album .album-info {
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                padding-top: 15px;
+                padding-bottom: 15px; }
+                .single-album .album-info h5 {
+                  font-size: 18px;
+                  margin-bottom: 0;
+                  text-transform: uppercase; }
+                .single-album .album-info p {
+                  margin-bottom: 0; }
+              .single-album:hover, .single-album:focus {
+                box-shadow: 0 5px 70px 0 rgba(0, 0, 0, 0.15); }
+            
+            .single-album-area {
+              position: relative;
+              z-index: 1;
+              -webkit-transition-duration: 500ms;
+              transition-duration: 500ms;
+              margin-bottom: 30px; }
+              .single-album-area .album-thumb {
+                position: relative;
+                z-index: 1; }
+                .single-album-area .album-thumb .album-price p {
+                  position: absolute;
+                  top: 15px;
+                  left: 15px;
+                  background-color: #fff;
+                  margin-bottom: 0;
+                  line-height: 1;
+                  padding: 5px 15px;
+                  border-radius: 15px;
+                  z-index: 20; }
+                .single-album-area .album-thumb .play-icon a {
+                  color: #fff;
+                  font-size: 50px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  line-height: 1;
+                  -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+              .single-album-area img {
+                width: 100%; }
+              .single-album-area .album-info {
+                display: block;
+                position: relative;
+                z-index: 1;
+                padding-top: 15px;
+                padding-bottom: 15px; }
+                .single-album-area .album-info h5 {
+                  font-size: 18px;
+                  margin-bottom: 0;
+                  text-transform: uppercase; }
+                .single-album-area .album-info p {
+                  margin-bottom: 0; }
+                    
+
+
+/* end of new of our client section */
 
 
 
