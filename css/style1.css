@@ -14817,11 +14817,11 @@ section {
   position: relative;
   display: block;
   padding: 8px 0 8px 50px;
-  background: #2b2c2c;
+  background: #dfd8c4;
   border-radius: 8px;
   overflow: hidden;
   text-decoration: none;
-  color: #fff;
+  color: rgb(126, 111, 63);
   font-size: 16px;
   font-weight: 700;
   width: 100%;
