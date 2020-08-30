@@ -8490,12 +8490,12 @@ h1, h2, h3, h4, h5,
       height: 10px;
       margin: 5px;
       border-radius: 50%;
-      background: #e6e6e6;
+      background: transparent;
       position: relative; }
       .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
         outline: none !important; }
       .owl-carousel .owl-dots .owl-dot.active {
-        background: #b3b3b3; }
+        background: transparent; }
   .owl-carousel:hover .owl-nav .owl-prev,
   .owl-carousel:hover .owl-nav .owl-next {
     opacity: 1; }
