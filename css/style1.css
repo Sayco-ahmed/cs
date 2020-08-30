@@ -8484,7 +8484,7 @@ h1, h2, h3, h4, h5,
       right: 0; }
   .owl-carousel .owl-dots {
     text-align: center; 
-  opacity: 0;}
+  opacity: 1;}
     .owl-carousel .owl-dots .owl-dot {
       width: 10px;
       height: 10px;
@@ -8613,15 +8613,15 @@ h1, h2, h3, h4, h5,
       text-align: center; }
       @media (min-width: 992px) {
         .owl-carousel.home-slider .owl-dots {
-          bottom: 130px; } }
+          bottom: -30px; } }
       .owl-carousel.home-slider .owl-dots .owl-dot {
         width: 10px;
         height: 10px;
         margin: 5px;
         border-radius: 50%;
-        background: #00bdaa; }
+        background: #967f36; }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
-          background: #fff; }
+          background: rgb(0, 0, 0); }
 
 .bg-light {
   background: #fafafa !important; }
