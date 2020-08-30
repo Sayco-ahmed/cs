@@ -14653,7 +14653,7 @@ section {
 .section-heading {
   position: relative;
   z-index: 1;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   text-align: center; }
   .section-heading p {
     color: #5f5f5f;
