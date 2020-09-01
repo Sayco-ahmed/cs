@@ -25,313 +25,8 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		.hi-slide {
-			position: relative;
-			width: 754px;
-			height: 292px;
-			margin: 115px auto 0;
-		}
-
-		.hi-slide .hi-next,
-		.hi-slide .hi-prev {
-			position: absolute;
-			top: 50%;
-			width: 40px;
-			height: 40px;
-			margin-top: -20px;
-			border-radius: 50px;
-
-
-			line-height: 40px;
-			text-align: center;
-			cursor: pointer;
-			background-color: #fff;
-			color: black;
-			transition: all 0.3s;
-			font-size: 20px;
-			font-weight: bold;
-		}
-
-		.hi-slide .hi-next:hover,
-		.hi-slide .hi-prev:hover {
-			opacity: 1;
-			background-color: #fff;
-		}
-
-		.hi-slide .hi-prev {
-			left: -60px;
-		}
-
-		.hi-slide .hi-prev::before {
-			content: '<';
-		}
-
-		.hi-slide .hi-next {
-			right: -60px;
-		}
-
-		.hi-slide .hi-next::before {
-			content: '>';
-		}
-
-		.hi-slide>ul {
-			list-style: none;
-			position: relative;
-			width: 754px;
-			height: 292px;
-			margin: 0;
-			padding: 0;
-		}
-
-
-		.hi-slide>ul>li {
-			overflow: hidden;
-			position: absolute;
-			z-index: 0;
-			left: 377px;
-			top: 146px;
-			width: 0;
-			height: 0;
-			margin: 0;
-			padding: 0;
-			border: 3px solid #fff;
-			background-color: #333;
-			cursor: pointer;
-		}
-
-		.hi-slide>ul>li>img {
-			width: 100%;
-			height: 100%;
-			background-position: center;
-		}
-
-		.bbox {
-			font-family: 'Roboto Condensed', sans-serif;
-			overflow-x: hidden;
-			background-image: url(images/newimg/1.jpg);
-			width: 100%;
-			padding-left: 150px;
-
-
-		}
-
-
-		.testimony-wrap .icon {
-			position: absolute;
-			top: -20px;
-			left: 20px;
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			background: none !important;
-		}
-
-
-
-
-
-
-		.fa-quote-left:before {
-			content: "\f10d";
-			font-size: xx-large;
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-		@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-		/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-		/* body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #eee;
-  color: #111;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-		:root {
-			--marquee-width: 80vw;
-			--marquee-height: 20vh;
-			--marquee-elements: 12;
-			/* defined with JavaScript */
-			--marquee-elements-displayed: 5;
-			--marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-			--marquee-animation-duration: calc(var(--marquee-elements) * 3s);
-		}
-
-		.rebo {
-			font-family: 'Montserrat', sans-serif;
-			background-color: #eee;
-			color: #111;
-			/* height: 100vh; */
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-		}
-
-		.marquee {
-			width: var(--marquee-width);
-			height: var(--marquee-height);
-			background-color: #111;
-			color: #eee;
-			overflow: hidden;
-			position: relative;
-		}
-
-		.marquee:before,
-		.marquee:after {
-			position: absolute;
-			top: 0;
-			width: 10rem;
-			height: 100%;
-			content: "";
-			z-index: 1;
-		}
-
-		.marquee:before {
-			left: 0;
-			background: linear-gradient(to right, #111 0%, transparent 100%);
-		}
-
-		.marquee:after {
-			right: 0;
-			background: linear-gradient(to left, #111 0%, transparent 100%);
-		}
-
-		.marquee-content {
-			list-style: none;
-			height: 100%;
-			display: flex;
-			animation: scrolling var(--marquee-animation-duration) linear infinite;
-		}
-
-		/* .marquee-content:hover {
-  animation-play-state: paused;
-} */
-		@keyframes scrolling {
-			0% {
-				transform: translateX(0);
-			}
-
-			100% {
-				transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
-			}
-		}
-
-		.marquee-content li {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			/* text-align: center; */
-			flex-shrink: 0;
-			width: var(--marquee-element-width);
-			max-height: 100%;
-			font-size: calc(var(--marquee-height)*3/4);
-			/* 5rem; */
-			white-space: nowrap;
-		}
-
-		.marquee-content li img {
-			width: 100%;
-			/* height: 100%; */
-			border: 2px solid #eee;
-		}
-
-		.marquee-content li h2 {
-			width: 100%;
-			/* height: 100%; */
-
-			color: white;
-
-
-			font-size: bold;
-		}
-
-		@media (max-width: 600px) {
-			html {
-				font-size: 12px;
-			}
-
-			:root {
-				--marquee-width: 100vw;
-				--marquee-height: 16vh;
-				--marquee-elements-displayed: 3;
-			}
-
-			.marquee:before,
-			.marquee:after {
-				width: 5rem;
-			}
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		.introo {
-  height: 100vh;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center;
-  text-align: center; */
-  /* letter-spacing: 0.1rem; */
-/*   background: linear-gradient(45deg, #ffcc5c 33%, rgba(0,0,0,0.6) 35%), url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66);
-  background-size: cover; */
-  /* background: repeating-linear-gradient(45deg, #ff6f69 0%, #ff6f69 5%, #ffcc5c 5%, #ffcc5c 10%); */
-  background: linear-gradient(45deg, #9e8751 20%, #9e8751 20% 50%, black 50% 80%, black 80%);
-}
-.introo-body {
-  border: 5px solid #fff;
-  padding: 2rem 3rem;
-  background-color: rgba(0,0,0,0.2);
-}
-/* .intro h1 {
-  font-size: 4rem;
-  margin-bottom: 0.75rem;
-}
-.intro p {
-  font-size: 1.75rem;
-} */
-
-@media (max-width: 700px) {
-  html { font-size: 12px; }
-  .introo-body { border: 3px solid #fff; padding: 1.5rem 2rem; }
-  .introo h1 { font-size: 2.5rem; }
-  .introo p { font-size: 1.25rem; }
-}
-	</style>
+	<link rel="stylesheet" href="css/stylemoka.css">
+	
 </head>
 
 <body>
@@ -411,28 +106,218 @@
 	<!--===============================================================================================-->
 	<!--===============================start slider zone =============================================-->
 	<!--===============================================================================================-->
-	<div class="card1">
-        <div class="ico">
-          <i class="fa fa-bullseye"></i>
-        </div>
-        <h3 class="title">Missão</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      </div>
-      <div class="card1">
-        <div class="ico">
-          <i class="fa fa-eye"></i>
-        </div>
-        <h3 class="title">Visão</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      </div>
-      <div class="card1">
-        <div class="ico">
-          <i class="fa fa-star"></i>
-        </div>
-        <h3 class="title">Valores</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-      </div>
+	<section class="ftco-section1 bg-light1">
+		<div class="container">
+			<div class="row justify-content-center no-gutters">
+				<div class="col-md-12 heading-section1 text-center ftco-animate mb-5">
+					<h2  class="mb-2">Expert Team </h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-1.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">John <br>Wilson</h3>
+								<span class="position mb-4">Web Designer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-2.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">Robert <br>Wills</h3>
+								<span class="position mb-4">Web Developer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-3.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">Mike <br>Smith</h3>
+								<span class="position mb-4">Graphic Designer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-4.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">Adrian <br>Henderson</h3>
+								<span class="position mb-4">System Analyst</span>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-5.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">John <br>Wilson</h3>
+								<span class="position mb-4">Web Programmer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-6.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">Robert <br>Wills</h3>
+								<span class="position mb-4">Web Designer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-7.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">Mike <br>Smith</h3>
+								<span class="position mb-4">Graphic Designer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img-wrap d-flex align-items-stretch justify-content-end">
+							<div class="img align-self-stretch" style="background-image: url(images/team-8.jpg);">
+								<ul class="ftco-social">
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+									<li class="ftco-animate d-flex"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text d-flex align-items-center pt-3">
+							<div class="desc">
+								<h3 class="mb-2">Adrian <br>Henderson</h3>
+								<span class="position mb-4">SEO</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="degree-left"></div>
+	</section>
+
+
+		<!--===============================================================================================-->
+	<!--==============================   carrer section   ========================================-->
+	<!--===============================================================================================-->
+	<div id="colorlib-subscribe">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-2 text-center colorlib-heading animate-box">
+					<h2>Subscribe Newsletter</h2>
+					<p>Subscribe our newsletter and get latest update</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-12 col-md-offset-3">
+					<div class="row">
+						<div class="col-md-12">
+						<form class="form-inline qbstp-header-subscribe">
+							<div class="col-three-forth">
+								<div class="form-group">
+									<input type="text" class="form-control" id="email" placeholder="Enter your email">
+								</div>
+							</div>
+							<div class="col-one-third">
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary">Subscribe Now</button>
+								</div>
+							</div>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--===============================================================================================-->
+	<!--==============================   carrer section   ========================================-->
+	<!--===============================================================================================-->
 
 
 
