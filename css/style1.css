@@ -14835,3 +14835,92 @@ section {
 }.fnt-50{
   font-size: 50px;
 }
+
+/* style industry */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rew{
+    
+  width: 100%;
+  
+
+
+  background: #1D2227 !important;
+  padding: 3rem  0;
+  
+}.d{
+  margin-top: -90px;
+
+}
+@media only screen and (min-width: 576px) and (max-width: 992px){
+
+/* .d{
+  margin-top: -10px; */
+
+.rew{
+  padding: 0rem 0;
+}.displayy{
+display: none;
+}.dis{
+
+display: inline-block !important;
+}
+
+}@media only screen and (max-width: 576px){
+
+.no{
+
+  display: none;
+/* }.d{
+  margin-top: -10px; */
+
+}.rew{
+  padding: 0rem 0;
+
+}
+}
+
+
+.no-rew{
+width: 100%;
+  
+
+
+  background: rgb(241, 243, 245) !important;
+  padding: 3rem  0;
+}
+.site-section {
+
+margin-top: 150px; 
+
+
+
+}.darkk{
+color: rgb(58, 57, 57);
+}.dark{
+color: black;
+
+}
+
+.hero-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: .6;
+  background: #000000;
+}
