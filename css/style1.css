@@ -14413,13 +14413,13 @@ section {
 }
 
 .section-title h2 {
-  font-size: 13px;
+  font-size: 35px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  color: #106eea;
-  display: inline-block;
+  color: #9E8752;
+ 
  
   border-radius: 50px;
 }
@@ -15454,12 +15454,14 @@ Design section
 
 #com-value .design-text h4 {
 	text-transform: uppercase;
-	margin-bottom: 25px;
+  margin-bottom: 25px;
+  color: #95835a;
 }
 
 #com-value .design-text p {
 	font-size: 16px;
-	font-weight: 300;
+  font-weight: 300;
+  color: #000;
 }
 
 /* ----------------
@@ -15574,6 +15576,260 @@ Location section
 }
 
 
+/* new company to join a job */
+
+/* line 2, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+.job-post .single-features {
+  display: flex;
+  align-items: center;
+  background: rgb(48, 47, 47);
+  border-radius: 10px;
+  padding: 60px;
+ 
+
+}
+
+/* line 8, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+.job-post .single-features.single-features2 {
+  background: #9E8752 !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 2, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+  .job-post .single-features {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 2, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+  .job-post .single-features {
+    flex-wrap: wrap;
+  }
+}
+
+/* line 18, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+.job-post .single-features .job-post-banner img {
+  display: block;
+}
+
+/* line 22, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+.job-post .single-features .features-caption {
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 22, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+  .job-post .single-features .features-caption {
+    padding: 0 32px;
+    padding-bottom: 0px;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 29, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+.job-post .single-features .features-caption h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* line 36, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job-post.scss */
+.job-post .single-features .features-caption p {
+  font-size: 15px;
+  line-height: 1.8;
+  background-image: url(../);
+  color: #fff;
+}
+
+
+@media (max-width: 575px) {
+  /* line 1, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job_details.scss */
+  .job-post-company {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 1, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job_details.scss */
+  .job-post-company {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 1, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_job_details.scss */
+  .job-post-company {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+
+
+/* line 1016, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.section-bg2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 351, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.border-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+  border-radius: 30px;
+  text-transform: normal;
+  padding: 12px 35px;
+  -moz-user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  position: relative;
+  transition: color 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  /* line 351, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+  .border-btn {
+    display: none;
+  }
+}
+
+/* line 375, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.border-btn::before {
+  border: 1px solid transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 101%;
+  height: 101%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleY(0);
+  border-radius: 0;
+}
+
+/* line 393, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.border-btn i {
+  padding-right: 11px;
+}
+
+/* line 397, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.border-btn:hover::before {
+  transform: scaleY(1);
+  border: 1px solid transparent;
+}
+
+/* line 401, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.border-btn:hover {
+  color: #f7f1de !important;
+}
+
+/* line 1, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+.wantToWork-area {
+  position: relative;
+  margin-bottom: -153px;
+}
+
+/* line 4, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+.wantToWork-area .wants-wrapper {
+  background: #fff;
+}
+
+/* line 8, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+.wantToWork-area .wantToWork-caption h2 {
+  font-size: 42px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 8, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+  .wantToWork-area .wantToWork-caption h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 8, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+  .wantToWork-area .wantToWork-caption h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 8, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+  .wantToWork-area .wantToWork-caption h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 25, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+.wantToWork-area .wantToWork-caption p {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 29, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+  .wantToWork-area .wantToWork-btn {
+    float: left;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 29, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+  .wantToWork-area .wantToWork-btn {
+    float: left;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 29, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_wantTowork.scss */
+  .wantToWork-area .wantToWork-btn {
+    float: left;
+    margin-top: 30px;
+  }
+}
+
+
+
+/* line 760, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+.w-padding2 {
+  padding: 51px 33px;
+  box-shadow: 0 20px 40px rgba(29, 37, 71, 0.04);
+}
+
+@media (max-width: 575px) {
+  /* line 760, C:/Users/HP/Desktop/July-HTML/287.Job_board/Job_board_Template/assets/scss/_common.scss */
+  .w-padding2 {
+    padding: 31px 13px;
+  }
+}
+
+
+
 /* end of company test style ------------------------------------------------------------------------------------------------------- */
 
 .blk-clr{
@@ -15594,4 +15850,8 @@ Location section
   font-size: 35px;
 }.fnt-50{
   font-size: 50px;
+}
+
+.bld{
+  font-weight: bold;
 }
