@@ -1,0 +1,82 @@
+#colorlib-subscribe {
+    padding: 7em 0;
+    clear: both; }
+  #colorlib-subscribe {
+    background: #ededed;
+    padding: 5em 0; }
+    #colorlib-subscribe .colorlib-heading {
+      margin-bottom: 20px; }
+      #colorlib-subscribe .colorlib-heading p {
+        font-size: 18px; }
+
+
+        .colorlib-heading {
+            margin-bottom: 5em; }
+            .colorlib-heading h2 {
+              font-size: 30px;
+              font-weight: 500;
+              text-transform: uppercase; }
+
+              .js .animate-box {
+                opacity: 0; }
+
+                .qbstp-header-subscribe {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -moz-flex-wrap: wrap;
+                    width: 100%;
+                    padding: 0; }
+                    .qbstp-header-subscribe .col-three-forth {
+                      width: 70%; }
+                    .qbstp-header-subscribe .col-one-third {
+                      width: 30%; }
+                    .qbstp-header-subscribe .col-three-forth, .qbstp-header-subscribe .col-one-third {
+                      display: table;
+                      height: 50px;
+                      float: left; }
+                      @media screen and (max-width: 768px) {
+                        .qbstp-header-subscribe .col-three-forth, .qbstp-header-subscribe .col-one-third {
+                          width: 50%; } }
+                    .qbstp-header-subscribe .form-control {
+                      background: transparent; }
+                    .qbstp-header-subscribe .form-group {
+                      position: relative;
+                      width: 100%;
+                      display: table-cell;
+                      vertical-align: middle; }
+                      @media screen and (max-width: 480px) {
+                        .qbstp-header-subscribe .form-group {
+                          width: 100%; } }
+                      .qbstp-header-subscribe .form-group input::-webkit-input-placeholder {
+                        color: #333333; }
+                      .qbstp-header-subscribe .form-group input::-moz-input-placeholder {
+                        color: #333333; }
+                      .qbstp-header-subscribe .form-group input::-ms-input-placeholder {
+                        color: #333333; }
+                      .qbstp-header-subscribe .form-group input::-o-input-placeholder {
+                        color: #333333; }
+                      .qbstp-header-subscribe .form-group input::input-placeholder {
+                        color: #333333; }
+                    .qbstp-header-subscribe #email {
+                      font-size: 14px;
+                      width: 100%;
+                      border: none;
+                      border-bottom: 1px solid #cccccc;
+                      color: #333333 !important; }
+                    .qbstp-header-subscribe button {
+                      border-top-left-radius: 0px !important;
+                      border-bottom-left-radius: 0px !important;
+                      background: #F7B633;
+                      color: #fff;
+                      border: none;
+                      padding: 10px 20px;
+                      text-transform: uppercase;
+                      height: 50px;
+                      width: 100%;
+                      display: block; }
