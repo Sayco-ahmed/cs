@@ -167,13 +167,13 @@
   color: #fff;
 }
 .intro-grid.color-1 {
-background-image: linear-gradient(to top, #393939, #313032, #2a2629, #241d21, #1e1417, #201517, #221718, #241818, #2f2424, #3b3131, #473e3e, #534c4c);
+background-image: radial-gradient(circle, #595b5e, #494c50, #3a3d42, #2b2f34, #1d2227);
 }
 .intro-grid.color-2 {
-background-image: linear-gradient(to top, #393939, #313032, #2a2629, #241d21, #1e1417, #201517, #221718, #241818, #2f2424, #3b3131, #473e3e, #534c4c);
+background-image: radial-gradient(circle, #595b5e, #494c50, #3a3d42, #2b2f34, #1d2227);
 }
 .intro-grid.color-3 {
-background-image: linear-gradient(to top, #393939, #313032, #2a2629, #241d21, #1e1417, #201517, #221718, #241818, #2f2424, #3b3131, #473e3e, #534c4c);
+background-image: radial-gradient(circle, #595b5e, #494c50, #3a3d42, #2b2f34, #1d2227);
 }
 
 
