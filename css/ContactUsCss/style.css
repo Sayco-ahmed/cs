@@ -167,13 +167,13 @@
   color: #fff;
 }
 .intro-grid.color-1 {
-background-image: radial-gradient(circle, #595b5e, #494c50, #3a3d42, #2b2f34, #1d2227);
+background-image: linear-gradient(to right top, #9e8751, #907d4f, #82724d, #74684b, #675e49);
 }
 .intro-grid.color-2 {
-background-image: radial-gradient(circle, #595b5e, #494c50, #3a3d42, #2b2f34, #1d2227);
+background-image: linear-gradient(to right top, #9e8751, #907d4f, #82724d, #74684b, #675e49);
 }
 .intro-grid.color-3 {
-background-image: radial-gradient(circle, #595b5e, #494c50, #3a3d42, #2b2f34, #1d2227);
+background-image: linear-gradient(to right top, #9e8751, #907d4f, #82724d, #74684b, #675e49);
 }
 
 
