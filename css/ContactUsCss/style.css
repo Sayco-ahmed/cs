@@ -514,6 +514,7 @@ h1.h1-contact-us {
   border-top-left-radius: 19px;
   z-index: 0;
   background-image: radial-gradient(circle, #513b07af, #47290fa4, #361b13b0, #201010bd, #000000a9);
+  transition: all 1s;
 }
 
 /* .div-werite-us{
