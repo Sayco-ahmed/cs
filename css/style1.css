@@ -15884,30 +15884,13 @@ Location section
 .bg-img-3{background: url(../images/bg/3.jpg)no-repeat center center / cover}
 .bg-img-4{background: url(../images/bg/4.jpg)no-repeat center center / cover}
 .bg-img-5{background: url(../images/contactus/img_bg_2.jpg)no-repeat center center / cover}
+.bg-img-6{background: url(../images/profile.jpg)no-repeat center center / cover}
 
 
 
-.black-opacity{
-  position: relative;
-  z-index: 9;
-}
-.black-opacity:before{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  content: "";
-  z-index: -9;
-  opacity: .8;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-}
 
-.discount-area.black-opacity:before{
-  opacity: .9;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-}
+
+
 
 
 /*-------------------------contact-area start-------------------------*/
@@ -16388,7 +16371,7 @@ display: block; }
 /*  */
 .services-area{margin-top:-100px}
 .services-area.services-area2{margin-top:0}
-.services-area .single-services{margin-bottom: 5px; display:flex;box-shadow:0px 25px 60px rgba(66,85,164,0.06);padding:29px 24px;border-radius:20px;background:rgba(0, 0, 0, 0.815)}
+.services-area .single-services{ margin-bottom: 5px; display:flex;box-shadow:0px 25px 60px rgba(66,85,164,0.06);padding:29px 24px;border-radius:20px;background:rgba(0, 0, 0, 0.815)}
 @media only screen and (min-width: 992px) and (max-width: 1199px){
   .services-area .single-services{padding:18px 14px}}
   @media (max-width: 575px){
@@ -16397,7 +16380,7 @@ display: block; }
   .services-area .single-services .features-icon img{display:block}
   .services-area .single-services .features-caption{padding-left:19px}
   .services-area .single-services .features-caption h3{color:#9e8751;text-align:center;font-size:30px;line-height:1.2;margin-bottom:10px;font-weight:700}
-  .services-area .single-services .features-caption p{text-align:center;font-size:17px;line-height:1.5;color:#000000;margin-bottom:0}
+  .services-area .single-services .features-caption p{text-align:center;font-size:17px;line-height:1.5;color:#ffffff;margin-bottom:0}
   @media only screen and (min-width: 992px) and (max-width: 1199px){
     .services-area .single-services .features-caption p{font-size:16px;color:white;}}
     @media (max-width: 575px){
