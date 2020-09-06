@@ -450,3 +450,78 @@ h1.h1-contact-us {
 	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
+
+
+
+
+.title {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container__elem {
+  padding: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1 1 0px;
+}
+
+.elem__block {
+  height: 254px;
+  width: 292px;
+  background-image: linear-gradient(to right top, #9e8751, #af8f45, #c19638, #d39d27, #e7a408);
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  bottom: 140px;
+  z-index: 1;
+}
+
+.elem__block:hover {
+  background-image: linear-gradient(to right top, #bb8d20, #b48c2f, #ac8a3b, #a58947, #9e8751);
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-img:hover {
+  transform: scale(1.1);
+}
+.div{
+  height: 241px;
+  width: 292px;
+  position: relative;
+  bottom: 393px;
+  border-top-right-radius: 121px;
+  border-top-left-radius: 19px;
+  z-index: 0;
+  background-image: radial-gradient(circle, #513b07af, #47290fa4, #361b13b0, #201010bd, #000000a9);
+  transition: all 1s;
+}
+
+/* .div-werite-us{
+  height: 254px;
+  width: 292px;
+  border: solid red 2px;
+  position: relative;
+  bottom: 395px;
+  border-radius: 15px;
+} */
