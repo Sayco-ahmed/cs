@@ -394,7 +394,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: 100%; }
+  max-height: 100%; }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -12268,7 +12268,7 @@ border-radius: 30px !important;
   width: 49%}
 }@media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-area .single-slider .slider-cap-wrapper .hero-img {
-  display: none;
+  width: 90%;
 }
 }@media (max-width: 575px) {
   .slider-area .single-slider .slider-cap-wrapper .hero-img {
@@ -13272,7 +13272,7 @@ img {
 
   .img-fluid {
     max-width: 100%;
-    height: 100%; }
+    max-height: 100%; }
   
   .img-thumbnail {
     padding: 0.25rem;
