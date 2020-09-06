@@ -8666,7 +8666,7 @@ h1, h2, h3, h4, h5,
     .btn.btn-primary:hover {
       border: 1px solid #00bdaa;
       background: transparent;
-      color: #00bdaa; }
+      color: #ffffff; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #00bdaa;
       background: transparent;
@@ -10270,8 +10270,15 @@ background-color:white; }
 .btn.btn-primary:hover{
   background: #9e8751;
   border: 1px solid #9e8751;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
+.btn.btn-primary2:hover{
+  background: #9e8751;
+  border: 1px solid #9e8751;
+  color:#9e8751;
+}
+
+
 
 /* request section */
 
@@ -11162,13 +11169,13 @@ border-radius: 30px;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
-
+/* 
    #prod-content:hover .badge-primary{
       color: #000000;
       background-color: #9E8752;
     border: #9E8752 1px solid;
     }
-
+ */
     .tabulation .nav-pills .nav-item .nav-link.active {
       color: rgb(252 252 252);
       background: #9e8751;
