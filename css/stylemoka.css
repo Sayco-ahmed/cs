@@ -70,13 +70,11 @@
                       border-bottom: 1px solid #cccccc;
                       color: #333333 !important; }
                     .qbstp-header-subscribe button {
-                      border-top-left-radius: 0px !important;
-                      border-bottom-left-radius: 0px !important;
                       background: #F7B633;
                       color: #fff;
                       border: none;
                       padding: 10px 20px;
                       text-transform: uppercase;
-                      height: 50px;
+                      height: 53px;
                       width: 100%;
                       display: block; }

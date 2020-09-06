@@ -16534,6 +16534,7 @@ display: block; }
   Work
 -----------------------*/
 .work {
+  margin-bottom: 50px;
   height: 645px;
   overflow: hidden;
   background: #000000;
