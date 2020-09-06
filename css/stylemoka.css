@@ -7,14 +7,17 @@
     #colorlib-subscribe .colorlib-heading {
       margin-bottom: 20px; }
       #colorlib-subscribe .colorlib-heading p {
-        font-size: 18px; }
+        font-size: 22px;
+        font-weight: 400;
+      color: black; }
 
 
         .colorlib-heading {
             margin-bottom: 5em; }
             .colorlib-heading h2 {
-              font-size: 30px;
-              font-weight: 500;
+              color: #9e8751;
+              font-size: 35px;
+              font-weight: 600;
               text-transform: uppercase; }
 
               .js .animate-box {
@@ -64,6 +67,7 @@
                       .qbstp-header-subscribe .form-group input::input-placeholder {
                         color: #333333; }
                     .qbstp-header-subscribe #email {
+                      background-color: black;
                       font-size: 14px;
                       width: 100%;
                       border: none;
