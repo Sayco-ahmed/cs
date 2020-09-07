@@ -8740,14 +8740,14 @@ h1, h2, h3, h4, h5,
         position: relative;
         z-index: 0;
         width: 100%;
-        background: #1d2227;
+        background: #9e8751;
         border-bottom: 1px solid rgba(255, 255, 255, 0.01); }
         .wrap .phone {
           z-index: 1; }
           .wrap .phone span {
-            color: #cbb88c; }
+            color: #000000; }
           .wrap .phone a {
-            color: #fff;
+            color: rgb(0, 0, 0);
             font-size: 12px; }
             .social-media {
   display: inline-block; }
@@ -8756,7 +8756,7 @@ h1, h2, h3, h4, h5,
     height: 40px;
     margin-right: 1px; }
     .social-media p a span {
-      color: #cbb88c; }
+      color: #000000; }
     .social-media p a:hover {
       background: #cbb88c;
       border-color: #cbb88c; }
