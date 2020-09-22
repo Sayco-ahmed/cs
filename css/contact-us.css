@@ -1,0 +1,180 @@
+    /* Contact Form Styling */
+
+    .section1 {
+        text-align: center;
+        display: table;
+        width: 100%;
+    }
+
+    .section1 .shtext {
+        display: block;
+        margin-top: 20px;
+    }
+
+ 
+
+    .section1 h1 {
+        font-size: 40px;
+        color: #9e8751;
+        font-weight: normal;
+    }
+
+    .section2 {
+        width: 1200px;
+        margin: 25px auto;
+    }
+
+    .section2 .col2 {
+        width: 48.71%;
+    }
+
+    .section2 .col2.first {
+        float: left;
+    }
+
+    .section2 .col2.last {
+        float: right;
+        position: relative;
+        top: 100px !important;
+    }
+
+    .section2 .col2.column2 {
+        padding: 0 30px;
+    }
+
+    .section2 span.collig {
+        color: #9e8751;
+        margin-right: 10px;
+        margin-bottom: 173px;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+
+
+
+    /* @media querries */
+
+    @media only screen and (max-width: 1266px) {
+        .section2 {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 960px) {
+        .container {
+            padding: 0 30px 70px;
+        }
+
+        .section2 .col2 {
+            width: 100%;
+            display: block;
+        }
+
+        .section2 .col2.first {
+            margin-bottom: 10px;
+        }
+
+        .section2 .col2.column2 {
+            padding: 0;
+        }
+
+        body .sec2map {
+            height: 250px !important;
+        }
+        .section2 span.collig {
+        margin-bottom: 0px;
+        }
+        .p1,.p2,.p3{
+            font-size: 14px;
+        }
+        .p1{
+            position: relative;
+            left: 310px;
+            bottom: 76px;
+        }
+        .p2{
+            position: relative;
+            bottom: 130px;
+        }
+        .p3{
+            position: relative;
+            bottom: 180px;
+            left: 520px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .section2 .sec2addr {
+            font-size: 14px;
+        }
+
+        .section2 .sec2contactform h3 {
+            font-size: 16px;
+        }
+
+        .section2 .sec2contactform input[type="text"],
+        .section2 .sec2contactform input[type="email"],
+        .section2 .sec2contactform textarea {
+            padding: 10px;
+            margin: 3px 0;
+        }
+
+        .section2 .sec2contactform input[type="submit"] {
+            padding: 10px 30px;
+            font-size: 14px;
+        }
+        .section2 span.collig {
+            margin-bottom: 0px;
+            }
+            .p1,.p2,.p3{
+                font-size: 14px;
+            }
+            .p1{
+                position: relative;
+                left: 0px;
+                bottom: 19px;
+            }
+            .p2{
+                position: relative;
+                bottom: 130px;
+            }
+            .p3{
+                position: relative;
+                bottom: 180px;
+                left: 314px;
+            }
+    }
+
+    @media only screen and (max-width: 420px) {
+        .section1 h1 {
+            font-size: 28px;
+        }
+        .section2 span.collig {
+            margin-bottom: 0px;
+            }
+            .p1,.p2,.p3{
+                font-size: 20px;
+            }
+            .p1{
+                position: relative;
+                /* left: 0px; */
+           /*      bottom: 0px; */
+                top:  26px;
+            }
+            .p2{
+                position: relative;
+                bottom: 130px;
+            }
+            .p3{
+                position: relative;
+                bottom: 132px;
+                left: 0px;
+            }
+    }
+    .p1,.p2,.p3{
+    
+    position: relative;
+    bottom: 80px;
+
+}
