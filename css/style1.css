@@ -18022,8 +18022,8 @@ display-flex, #job-post-new .signup-content, #job-post-new .form-row, #job-post-
 
 .single-service {
   text-align: center;
-  border: 1px solid #eee;
-  background-color: #eee;
+  border: 1px solid #fff;
+  background-color: #fff;
   border-radius: 10px;
   padding: 25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -18032,13 +18032,15 @@ display-flex, #job-post-new .signup-content, #job-post-new .form-row, #job-post-
   transition: all 0.3s ease 0s
 }
 
+.single-service h1{
+  font-weight: bolder !important;
+}
 .single-service h4 {
   margin-bottom: 20px;
+  
  
 }
-.single-service .header-text p {
-color:white;
-}
+
 .single-service p {
   margin-bottom: 0;
   
@@ -18065,9 +18067,7 @@ color:white;
   }
 }
 
-.feature-area , .service-area{
-  background-color: #91814d
-}
+
 
 .feature-area .single-feature {
   background: #fff;
@@ -18084,7 +18084,8 @@ color:white;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s
+  transition: all 0.3s ease 0s;
+  color: #000;
 }
 
 .feature-area .single-feature .title .lnr {
@@ -18185,3 +18186,4 @@ color:white;
 .single-post-area .navigation-area .nav-right:hover .lnr {
   opacity: 1
 }
+
