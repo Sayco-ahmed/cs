@@ -447,15 +447,9 @@ pre {
   overflow-y: scroll; }
 
 .container {
-<<<<<<< Updated upstream
   width:100%;
   padding-right: 15px;
   padding-left: 15px;
-=======
-  width: 100%;
-  padding-right: 85px;
-  padding-left: 85px;
->>>>>>> Stashed changes
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
