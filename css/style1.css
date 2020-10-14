@@ -17657,6 +17657,7 @@ display: block; }
   position: relative;
   z-index: 2;
 }
+/* تعديل احمد قطب علي الجزئيه دي  */
 
 .hs-item .hs-text h1{
   font-size: 41px;
@@ -17688,6 +17689,8 @@ display: block; }
   color: #fff;
   bottom: 105px;
 }
+
+/* نهاية التعديل  */
 
 .hs-item .hs-text .site-btn {
   position: relative;
@@ -17749,6 +17752,8 @@ display: block; }
   bottom: 0;
 }
 
+/* تعديل احمد قطب علي الجزئيه دي  */
+
 
 .owl-carousel .owl-nav {
   position: absolute;
@@ -17759,16 +17764,16 @@ display: block; }
 
 
 #ournew-slider .owl-carousel .owl-nav .owl-prev {
-  left: 150px; }
+  left: 195px; }
 #ournew-slider .owl-carousel .owl-nav .owl-next {
-  right: 150px; }
+  right: 850px; }
 
   #ournew-slider{
     height: 850px;
   }
 
 
-
+/* نهايه التعديل  */
 
 
 
