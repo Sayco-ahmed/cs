@@ -82,3 +82,45 @@
                       height: 53px;
                       width: 100%;
                       display: block; }
+
+
+
+                      .gallery-area .single-gallery .content .content-details .primary-btn {
+                        color: #9e8751 !important;
+                      }
+                     .single-feature:hover p{
+                      color: white;
+                     }
+
+                     .sidebar .sidebar-box .categories li a {
+                       color:#9e8751 !important ;
+                     }
+
+                     .sidebar .sidebar-box .categories li a:hover {
+                      color:#816e42  !important  ;
+                    }
+
+                    .team__btn a {
+                      color:#9e8751  ;
+
+                    }
+                    .team__btn:hover a {
+                      color:#fff  ;
+
+                    }
+
+                    .categories li a{
+                      color:#9e8751  ;
+
+                    }
+
+                    .gld{
+
+                       color:#9e8751 !important ;
+                    }
+
+                    .contact-wrap ul li {
+                      background-color: #fff;
+                      border: solid 2px;
+                      border-color:#9e8751 ;
+                    }
